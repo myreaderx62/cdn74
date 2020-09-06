@@ -1,0 +1,281 @@
+<div id="container"> 
+	<!-- header -->
+	<div id="head">
+<!-- Class:Header Start -->
+<div id="header">
+    <div id="headerInner" class="clearfix">
+        <p id="logo">
+            <a href="/index.htm"><img src="/shared/img/logo.png" alt="進化する明日へ Continue thinking ｜ I-O DATA" width="150" height="30" /></a>
+        </p>
+        <div id="hdrMenu">
+            <dl id="hdrGbMenu" class="toggle-set">
+                <dt id="hdrDt01">MENU</dt>
+                <dd class="toggle-box">
+                    <div id="subArea">
+                        <div class="search">
+                            <form class="search" name="SS_searchForm" id="SS_searchForm" action="//search.iodata.jp/search" method="get" enctype="application/x-www-form-urlencoded">
+                                <input name="site" value="12KRJNET" type="hidden" />
+                                <input name="charset" value="UTF-8" type="hidden" />
+                                <span class="gnavi">
+                <input name="query" value="" id="SS_searchQuery" maxlength="100" autocomplete="off" class="txt_search" type="text" />
+                <input name="group" value="10" id="SS_group" type="hidden" />
+                <input name="design" value="10" type="hidden" />
+                <input src="/shared/img/hdr_btn_serach.png" alt="検索する" name="submit" value="検索" id="SS_searchSubmit" type="image" />
+                </span>
+                            </form>
+                        </div>
+                        <ul id="siteMenu">
+                            <li class="first">
+                                <a href="/ioguide/"><img src="/shared/img/hdr_icn_sitemap.png" title="サイトマップ" alt="サイトマップ" width="21" height="21" /></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/iodata" target="_blank"><img src="/shared/img/hdr_icn_fb.png" title="Facebook" alt="Facebook" width="21" height="21" /></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/io_data" target="_blank"><img src="/shared/img/hdr_icn_tw.png" title="Twitter" alt="Twitter" width="21" height="21" /></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/iodata.jp/" target="_blank"><img src="/shared/img/hdr_icn_ig.png" title="Instagram" alt="Twitter" width="21" height="21" /></a>
+                            </li>
+                            <li>
+                                <a href="/rss/index.rdf"><img src="/shared/img/hdr_icn_rss.png" title="RSS" alt="RSS" width="21" height="21" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul id="gbArea">
+                        <li id="gbProducts"><a href="/product/" id="gbProductsBtn"><span class="icn"><img src="/shared/img/gb_product.png" title="商品一覧" alt="商品一覧" width="29" height="23" /></span><span class="menutxt">商品一覧</span></a>
+                            <div id="menuProducts">
+                                <dl>
+                                    <dt>商品カテゴリーから探す<span id="menuProductsBtnTop"><a href="/product/" class="arw">もっと見る</a></span></dt>
+                                    <dd id="menuProductsWrapper" class="clearfix">
+                                        <ul id="menuProductsInner" class="clearfix">
+                                            <li>
+                                                <a href="/product/hdd/"><img src="/shared/img/product01.png" title="HDD（ハードディスク）／SSD" alt="HDD（ハードディスク）／SSD" width="171" height="50" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="/product/nas/"><img src="/shared/img/product02.png" title="NAS（ネットワークHDD）" alt="NAS（ネットワークHDD）" width="171" height="50" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="/product/lcd/"><img src="/shared/img/product13-2.png" title="液晶ディスプレイ／電子黒板化ユニット" alt="液晶ディスプレイ／電子黒板化ユニット" width="171" height="50" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="/product/pc/"><img src="/shared/img/product21.png" title="Web会議／サイネージ関連" alt="Web会議／サイネージ関連" width="171" height="50" /></a>
+                                            </li>
+                                            <li class="side">
+                                                <a href="/product/audio/"><img src="/shared/img/product24.png" title="オーディオ関連（CDレコ・fidata）" alt="オーディオ関連（CDレコ・fidata）" width="171" height="50" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="/product/lancam/"><img src="/shared/img/product03.png" title="ネットワークカメラ" alt="ネットワークカメラ" width="171" height="50" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="/product/network/"><img src="/shared/img/product04.png" title="無線LAN（Wi-Fi）" alt="無線LAN（Wi-Fi）" width="171" height="50" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="/product/lan/"><img src="/shared/img/product05.png" title="有線LAN／ハブ" alt="有線LAN／ハブ" width="171" height="50" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="/product/tsushin/index.htm"><img src="/shared/img/product20.png" title="通信／MSM" alt="通信／M2M" width="171" height="50" /></a>
+                                            </li>
+                                            <li class="side">
+                                                <a href="/product/storage/"><img src="/shared/img/product11.png" title="ブルーレイ／DVDドライブ" alt="ブルーレイ／DVDドライブ" width="171" height="50" /></a>
+                                            </li>
+                                           
+                                            <li>
+                                                <a href="/product/smartphone/"><img src="/shared/img/product14.png" title="スマホ・タブレット関連" alt="スマホ・タブレット関連" width="171" height="50" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="/product/av/"><img src="/shared/img/product10.png" title="映像機器／チューナー" alt="映像機器／チューナー" width="171" height="50" /></a>
+                                            </li>
+                                            <li class="sideRight">
+                                                <a href="/product/memory/"><img src="/shared/img/product09.png" title="メモリー" alt="メモリー" width="171" height="50" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="/product/goppa/"><img src="/shared/img/brand06.png" title="GOPPA" alt="GOPPA" height="50" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="/product/creative/"><img src="/shared/img/brand02.png" title="クリエイティブ・メディア" alt="クリエイティブ・メディア" width="162" height="50" /></a>
+                                            </li>
+                                            <li class="sideRight">
+                                               <a href="/product/verbatim/"><img src="/shared/img/brand01.png" title="Verbatim" alt="Verbatim" width="162" height="50" /></a>
+                                            </li>
+                                            <li class="brandBox brandBox01">
+                                                <a href="/product/usbmemory/"><img src="/shared/img/product07.png" title="USBメモリー" alt="USBメモリー" width="171" height="50" /></a> 
+                                            </li>
+                                            <li class="brandBox brandBox02">
+                                                <a href="/product/memory-card/"><img src="/shared/img/product08.png" title="メモリーカード／リーダー・ライター" alt="メモリーカード／リーダー・ライター" width="171" height="50" /></a>
+                                            </li>
+                                            <li class="brandBox brandBox03">
+                                                <a href="/product/g-technology/"><img src="/shared/img/brand05.png" title="G-Technology" alt="G-Technology" width="162" height="50" /></a>
+                                            </li>
+                                            <li class="brandBox brandBox04">
+                                                <a href="/product/wd/"><img src="/shared/img/brand04.png" title="WD" alt="WD" width="162" height="50" /></a>
+                                            </li>
+                                            <li id="menuProductsBtnCloseBox"><span id="menuProductsBtnClose"><a href="#" class="arw" id="gbProductsBtnClose">閉じる</a></span></li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li id="gbPio"><a href="/pio/"><span class="icn"><img src="/shared/img/gb_pio.png" title="対応情報" alt="対応情報" width="29" height="23" /></span><span class="menutxt">対応情報</span></a></li>
+                        <li id="gbSupport"><a href="/support/"><span class="icn"><img src="/shared/img/gb_support.png" title="サポート・Q&A" alt="サポート・Q&A" width="29" height="23" /></span><span class="menutxt">サポート・Q&amp;A</span></a></li>
+                        <li id="gbCompany"><a href="/company/"><span class="icn"><img src="/shared/img/bg_company.png" title="会社案内" alt="会社案内" width="29" height="23" /></span><span class="menutxt">会社案内</span></a></li>
+                        <li id="gbShopping"><a href="https://www.ioplaza.jp/" target="_blank" onclick="var s=s_gi(s_account);s.linkTrackVars='events';s.linkTrackEvents='event12';s.events='event12';s.tl(this,'o','link top ioplaza');pageTracker._trackEvent('plazaLead', 'Index', 'globalNaviShopping');"><span class="icn"><img src="/shared/img/bg_shopping.png" title="ショッピング" alt="ショッピング" width="29" height="23" /></span><span class="menutxt">ショッピング</span></a></li>
+                        <li id="gbSolutions"><a href="/biz/"><span class="icn"><img src="/shared/img/bg_solutions.png" title="法人様向け" alt="法人様向け" width="29" height="23" /></span><span class="menutxt">法人様向け</span></a></li>
+                        <li id="gbSitemap"><a href="/ioguide/"><span class="icn"><img src="/shared/img/gb_sitemap.png" title="サイトマップ" alt="サイトマップ" width="29" height="23" /></span><span class="menutxt">サイトマップ</span></a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<!-- Class:Header End   -->
+	</div>
+	<!-- /header -->
+<!-- Class:Bread Crumbs Start -->
+
+<!-- Class:Bread Crumbs End   -->
+	<!-- contents -->
+	<div id="contents">
+		<div class="full" id="contentsMain">
+<!-- ===== Content ===== Start -->
+<div id="contents" class="mt50">
+<h1><img width="372" height="63" src="/img/404/404_title.gif" alt="404 File Not Found. お探しのページが見つかりません。" /></h1>
+<!----- readText ----->
+<div class="readText">
+<h2>指定されたページ（URL）は見つかりませんでした。</h2>
+<div class="set01">
+<ul>
+<li>URLが正しいか再度確認し、再読み込みしてください。</li>
+<li>ページが削除されたか、移動している可能性があります。<br />
+お手数ですが、以下の方法をお試しください。</li>
+</ul>
+<!-- Google拡張404ページタグ -->
+<style type="text/css">
+  #goog-wm { }
+  #goog-wm h3.closest-match { }
+  #goog-wm h3.closest-match a { }
+  #goog-wm h3.other-things { }
+  #goog-wm ul li { }
+  #goog-wm li.search-goog { display: block; }
+</style>
+<script type="text/javascript">
+  var GOOG_FIXURL_LANG = 'ja';
+  var GOOG_FIXURL_SITE = 'http://www.iodata.jp/';
+</script>
+<script type="text/javascript"
+    src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
+<style type="text/css">
+  #goog-wm { }
+  #goog-wm h3.closest-match { }
+  #goog-wm h3.closest-match a { }
+  #goog-wm h3.other-things { }
+  #goog-wm ul li { }
+  #goog-wm li.search-goog { display: block; }
+</style>
+<script type="text/javascript">
+  var GOOG_FIXURL_LANG = 'ja';
+  var GOOG_FIXURL_SITE = 'http://www.iodata.jp/';
+</script>
+<script type="text/javascript"
+    src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
+<!-- Google拡張404ページタグ -->
+<!--
+<h3>もしかして：</h3>
+<a href="#">www.-iodata.-jp/-product/-xxxxx</a> にアクセスする<br />
+<a href="#">www.-iodata.-jp/-product</a> にアクセスする<br />
+<h3>www.iodata.jpのページを検索する： </h3>
+検索
+-->
+</div>
+<h2>問題点をお知らせください。</h2>
+<div>
+<p>リンクエラーなど当社Webサイトに関するご意見、お問い合わせ等がございましたら、以下よりご連絡ください。</p>
+      <p class="arrow-link"><a href="https://wssl.iodata.jp/report/entry/?cid=hp_inquire" target="_blank">お問い合わせフォームへ</a></p>
+</div>
+</div>
+<!----- readText / ----->
+<div style="clear:both;"></div>
+</div>
+<!-- ===== Content ===== End   -->
+		</div>
+	</div>
+	<!-- /contents -->
+	<!-- footer -->
+	<div id="footer">
+<!-- Class:Footer (ContentFooter) Start -->
+<div id="footerTop">
+  <div id="footerTopInner">
+    <ul>
+      <li id="ftrCatalog"><a href="/product/catalog/"><img width="264" height="47" alt="カタログ・インフォメーション" src="/shared/img/ftr_catalog.png" /></a></li>
+      <li id="ftrEnq"><a target="_blank" href="https://wssl.iodata.jp/report/entry/?cid=web_kansou2014"><img width="264" height="47" alt="ホームページに関するアンケート " src="/shared/img/ftr_enq.png" /></a></li>
+      <li id="ftrMagazine"><a target="_blank" href="https://wssl.iodata.jp/magz/"><img width="222" height="47" alt="I-O DATA メールマガジン" src="/shared/img/ftr_magazine.png" /></a></li>
+    </ul>
+    <ul id="ftrSns">
+      <li id="ftrFb"><a href="https://www.facebook.com/iodata" target="_blank"><img src="/shared/img/ftr_fb.png" alt="Facebook" width="47" height="47" /></a></li>
+      <li id="ftrTw"><a href="https://twitter.com/io_data" target="_blank"><img src="/shared/img/ftr_tw.png" alt="Twitter" width="47" height="47" /></a></li>
+     <li id="ftrTw"><a href="//www.instagram.com/iodata.jp/" target="_blank"><img src="/shared/img/ftr_ig.png" alt="Twitter" width="47" height="47" /></a></li>
+    </ul>
+  </div>
+</div>
+<div id="footerCenter">
+  <div class="clearfix" id="footerCenterInner">
+    <div id="boxLeft" class="boxFtr">
+      <h2>商品のご購入</h2>
+      <ul>
+        <li class="first"><a onclick="var s=s_gi(s_account);s.linkTrackVars='events';s.linkTrackEvents='event12';s.events='event12';s.tl(this,'o','link top ioplaza');" href="https://www.ioplaza.jp/" target="_blank"><img width="185" height="49" alt="直販サイトで購入「ioPLAZA」" src="/shared/img/ftr_ioplaza.png" /></a></li>
+        <li><a href="/partner-shop.htm"><img width="185" height="49" alt="パートナーショップで購入「Internet P@rtner Shop」" src="/shared/img/ftr_partner.png" /></a></li>
+      </ul>
+    </div>
+    <div id="boxCenter" class="boxFtr">
+      <h2>購入前のお問い合わせ</h2>
+      <p>商品選びで悩んだら&hellip;<br />
+        お気軽にお問い合わせください。</p>
+      <ul>
+        <li><a href="/support/before/contactus.htm?cid=int_LeadFoot">インフォメーションデスクへ</a></li>
+      </ul>
+    </div>
+    <div id="boxRight" class="boxFtr">
+      <h2>購入後のお問い合わせ </h2>
+      <ul>
+        <li><a href="/support/qa/">Q&A よくあるご質問</a></li>
+        <li><a href="/support/after/tel/">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Class:Footer (ContentFooter) End   -->
+<!-- Class:Footer Start -->
+<div id="footerBtm">
+  <div id="footerBtmInner">
+    <ul class="clearfix">
+      <li class="first"><a href="/explain.htm">表示価格・商品全般について</a></li>
+      <li><a href="/copyright.htm">本サイトご利用上の注意</a></li>
+      <li><a href="/privacy.htm">プライバシーポリシー</a></li>
+      <li><a href="/security_p.htm">セキュリティポリシー</a></li>
+    </ul>
+  </div>
+</div>
+<div id="footerCopyArea">
+  <div class="clearfix" id="footerCopyAreaInner">
+    <dl>
+      <dt><img width="260" alt="I-O DATA" src="/shared/img/ftr_logo.png" /></dt>
+      <dd class="first"><a href="/company/">会社案内</a></dd>
+      <dd><a href="/company/recruit/">採用情報</a></dd>
+      <dd><a href="http://www.iodata.com/" target="_blank">I-O DATA Global</a></dd>
+    </dl>
+    <p> <img width="227" height="12" alt="COPYRIGHT&copy;I-O DATA DEVICE, INC." src="/shared/img/copyright.png" /> </p>
+  </div>
+</div>
+<!-- Class:Footer End   -->
+	</div>
+	<!-- /footer --> 
+</div>
+<!-- pagetop-->
+<div id="pagetop"><a href="#container"><img width="46" height="46" alt="このページのトップへ" src="/shared/img/pagetop.png" /></a></div>
+<!-- /pagetop-->
+<!-- showPC-->
+<div id="showPC"><a href="javascript:void(0)">PC版を表示</a></div>
+<!-- /showPC-->
+<!-- Class:Analyze Scripts Start -->
+
+<!-- Class:Analyze Scripts End   -->
