@@ -1,0 +1,735 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META NAME='OWNER' CONTENT='xavier.poli@infratech.fr'>
+<META NAME='AUTHOR' CONTENT='SecuObs Infratech'>
+<META NAME="Publisher" CONTENT="Reflow Framework par Xavier Poli">
+<META HTTP-EQUIV='VW96.OBJECT TYPE' CONTENT='HOWTO'>
+<META NAME='robots' CONTENT='all'>
+<META NAME="Copyright" CONTENT="Infratech">
+<META NAME="Distribution" CONTENT="global">
+<META NAME="Identifier-URL" CONTENT="www.secuobs.com">
+<META http-equiv="Content-Language" content="fr">
+<meta name="revisit-after" content="1 Days">
+<title>
+ SecuObs - L'observatoire de la s&eacute;curite internet - Site d'informations professionnelles francophone sur la s&eacute;curit&eacute; informatique
+</title>
+<meta name="description" content="
+ SecuObs - L'observatoire de la s&eacute;curite internet - Site d'informations professionnelles francophone sur la s&eacute;curit&eacute; informatique">
+<META http-equiv="Refresh" content="3600">
+
+<meta name="keywords" content="pakistan, canada, twitter, fender, ms08-067, (auth, speaker, ofcom, alarm, intelligence, sniff, nforce, function, provider, interface, denial, fujitsu, spectrum, javascript, turquie, october, gestion, outlook, tracker, ethernet, réseau, f-secure, quantum, automate, fichier, quicktime, potent, notebook, gartner, captcha, censor, cybercrime, attaque, tibet, compromis, scanner, firewall, processor, certificat, policy, copyright, president, système, military, paris, remov, audio, engineering, telecom, mysql, london, passport, novell, airport, mcafee, filter, gmail, emerge, teleco, spyware, australia, wimax, excel, hardware, gates, squid, samsung, prison, document, defend, kernel, activex, german, torrent, interview, driver, ubuntu, amazon, backup, verizon, phorm, router, propos, toshiba, compliance, skype, rootkit, robot, forensic, india, america, package, cable, blu-ray, russia, appliance, authentication, audit, camera, development, switch, memory, desktop, spammer, traffic, cookie, major, blackberry, screen, vendor, france, macbook, client, buffer, safari, mozilla, motorola, infect, insecure, upgrade, trust, appro, legal, myspace, futur, surveillance, bypass, japan, android, browser, joomla, detect, green, inclusion, youtube, podcast, controller, police, trend, expert, identity, password, visio, cyberspeak, trojan, share, botnet, social, developer, cross, government, oracle, overflow, local, obama, crack, digital, fingerprint, wi-fi, symantec, nokia, photo, theft, storm, privacy, monitor, europe, database, china, storage, conference, fraud, firefox, player, website, pirate, email, cisco, vmware, critical, flash, opera, wireless, priva, adobe, facebook, phish, chine, office, virus, business, ebook, biometric, research, source, linux, virtual, laptop, access, protect, crypt, drive, patch, intel, vista, malware, sécurité, yahoo, black, iphone, exploit, internet, apple, server, mobile, remote, inject, attack, hacker, vulnerability, google, network, vulnérabilité, windows, microsoft, security">
+<link rel="alternate" type="application/rss+xml" title="Flux articles" href="http://www.secuobs.com/rss/secuobs.xml"><link rel="alternate" type="application/rss+xml" title="Flux revue francophone" href="http://www.secuobs.com/revue/xml/frxml10.xml"><link rel="alternate" type="application/rss+xml" title="Flux revue internationale" href="http://www.secuobs.com/revue/xml/xml10.xml"><link rel="alternate" type="application/rss+xml" title="Flux commentaires" href="http://www.secuobs.com/rss/cxml10.xml"><link rel="alternate" type="application/rss+xml" title="Flux failles" href="http://www.secuobs.com/rss/snxml10.xml"><link rel="alternate" type="application/rss+xml" title="Flux Videos" href="http://www.secuobs.com/videos/xml/xml10.xml"><link rel="alternate" type="application/rss+xml" title="Flux revue Twitter" href="http://www.secuobs.com/twitter/xml/xml10.xml"><link rel="alternate" type="application/rss+xml" title="Flux revue pour security" href="http://www.secuobs.com/revue/xml/securityxml10.xml"><link rel="alternate" type="application/rss+xml" title="Flux revue pour microsoft" href="http://www.secuobs.com/revue/xml/microsoftxml10.xml"><link rel="alternate" type="application/rss+xml" title="Flux revue pour windows" href="http://www.secuobs.com/revue/xml/windowsxml10.xml">
+<link rel="alternate" type="application/rss+xml" title="Flux video pour curit" href="http://www.secuobs.com/videos/xml/curitxml10.xml"><link rel="alternate" type="application/rss+xml" title="Flux video pour security" href="http://www.secuobs.com/videos/xml/securityxml10.xml"><link rel="alternate" type="application/rss+xml" title="Flux video pour biomet" href="http://www.secuobs.com/videos/xml/biometxml10.xml">
+<link rel="alternate" type="application/rss+xml" title="Flux twitter pour security" href="http://www.secuobs.com/twitter/xml/securityxml10.xml"><link rel="alternate" type="application/rss+xml" title="Flux twitter pour linux" href="http://www.secuobs.com/twitter/xml/linuxxml10.xml"><link rel="alternate" type="application/rss+xml" title="Flux twitter pour botnet" href="http://www.secuobs.com/twitter/xml/botnetxml10.xml">
+<link rel="alternate" type="application/rss+xml" title="Flux SecuObs pour sécurité" href="http://www.secuobs.com/articles/xml/scuritxml10.xml"><link rel="alternate" type="application/rss+xml" title="Flux SecuObs pour exploit" href="http://www.secuobs.com/articles/xml/exploitxml10.xml"><link rel="alternate" type="application/rss+xml" title="Flux SecuObs pour windows" href="http://www.secuobs.com/articles/xml/windowsxml10.xml">
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!-- 
+A:hover {color: ; background-color:}
+a{text-decoration:none ;} 
+--> 
+</style>
+
+<meta name="verify-v1" content="SCR7IOfpCIbKsp0tuEzvRhHV941nB2wCb/UOPOMS2kQ=" />
+<style type="text/css">
+span.titre { font-family: Arial, Helvetica, sans-serif ;font-size: 17px ; color:#000000; font-weight: 400; line-height: 1.35em}
+span.central { font-family: Arial, Helvetica, sans-serif ;font-size: 14px ; color:#000000; font-weight: 400; line-height: 1.35em}
+span.col { font-family: Arial, Helvetica, sans-serif ;font-size: 13px ; color:#000000; font-weight: 400}
+span.box { font-family: Arial, Helvetica, sans-serif ;font-size: 12px ; color:#000000; font-weight: 400}
+span.white { font-family: Arial, Helvetica, sans-serif ; color:#FFFFFF; font-size: 12px ; color:#000000; font-weight: 535}
+
+a:link { color:#003955 ; text-decoration:none}
+
+a:visited { color:#003955 ; text-decoration:none}
+
+a:hover { color:purple ; text-decoration:underline ; }
+
+body { width: 100%; height: 100%; margin: 0; top-margin: 0; padding: 0; }
+
+</style>
+<SCRIPT LANGUAGE=JavaScript1.1>
+<!--
+OAS_version = 11;
+if (navigator.userAgent.indexOf('Mozilla/3') != -1)
+OAS_version = 10;
+if (OAS_version >= 11)
+document.write('<SC'+'RIPT LANGUAGE=JavaScript1.1 SRC="' + OAS_url + 'adstream_mjx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + OAS_query + '"><\/SCRIPT>');
+//-->
+</SCRIPT><SCRIPT LANGUAGE='JavaScript'>
+<!--
+document.write('');
+function OAS_AD(pos) {
+if (OAS_version >= 11 && typeof(OAS_RICH!='undefined'))
+  OAS_RICH(pos);
+else
+  OAS_NORMAL(pos);
+}
+//-->
+</SCRIPT>
+
+<script type="text/javascript">
+sas_tmstp=Math.round(Math.random()*10000000000);sas_masterflag=1;
+function SmartAdServer(sas_pageid,sas_formatid,sas_target) {
+if (sas_masterflag==1) {sas_masterflag=0;sas_master='M';} else {sas_master='S';};
+document.write('<scr'+'ipt SRC="http://www.smartadserver.com/call/pubj/' + sas_pageid + '/' + sas_formatid + '/'+sas_master +
+'/' + sas_tmstp + '/' + escape(sas_target) + '?"></scr'+'ipt>');
+}
+</script>
+<script language="JavaScript" type="text/javascript">
+ord=Math.random()*10000000000000000;
+</script> 
+
+<script type="text/javascript"
+src="http://partner.googleadservices.com/gampad/google_service.js">
+</script>
+<script type="text/javascript">
+  GS_googleAddAdSenseService("ca-pub-7670419794937883");
+  GS_googleEnableAllServices();
+</script>
+<script type="text/javascript">
+  GA_googleAddSlot("ca-pub-7670419794937883", "carre-secuobs-300x250");
+  GA_googleAddSlot("ca-pub-7670419794937883", "Leaderboard-home-SecuObs");
+  GA_googleAddSlot("ca-pub-7670419794937883", "Sky-home-SecuObs");
+  GA_googleAddSlot("ca-pub-7670419794937883", "FT-SecuObs");
+  GA_googleAddSlot("ca-pub-7670419794937883", "p2");
+  GA_googleAddSlot("ca-pub-7670419794937883", "art-m");
+  GA_googleAddSlot("ca-pub-7670419794937883", "art-p");
+  GA_googleAddSlot("ca-pub-7670419794937883", "art-s");
+  GA_googleAddSlot("ca-pub-7670419794937883", "ho-m");
+  GA_googleAddSlot("ca-pub-7670419794937883", "ho-p");
+  GA_googleAddSlot("ca-pub-7670419794937883", "ho-s");
+  GA_googleAddSlot("ca-pub-7670419794937883", "ma-b");
+  GA_googleAddSlot("ca-pub-7670419794937883", "ma-p");
+  GA_googleAddSlot("ca-pub-7670419794937883", "ma-s");
+  GA_googleAddSlot("ca-pub-7670419794937883", "so-m");
+  GA_googleAddSlot("ca-pub-7670419794937883", "so-p");
+  GA_googleAddSlot("ca-pub-7670419794937883", "so-s");
+  GA_googleAddSlot("ca-pub-7670419794937883", "tr-m");
+  GA_googleAddSlot("ca-pub-7670419794937883", "tr-p");
+  GA_googleAddSlot("ca-pub-7670419794937883", "tr-s");
+  GA_googleAddSlot("ca-pub-7670419794937883", "tw-m");
+  GA_googleAddSlot("ca-pub-7670419794937883", "tw-p");
+  GA_googleAddSlot("ca-pub-7670419794937883", "tw-s");
+  GA_googleAddSlot("ca-pub-7670419794937883", "vi-m");
+  GA_googleAddSlot("ca-pub-7670419794937883", "vi-p");
+  GA_googleAddSlot("ca-pub-7670419794937883", "vi-s");
+</script>
+<script type="text/javascript">
+  GA_googleFetchAds();
+</script>
+
+<script type="text/javascript">
+sas_pageid='28323/188831';    // Page : fr_secuobs/tout_site
+sas_formatid=11313;        // Format : flash transparent (dhtml) 0x0
+sas_target='';            // Targeting
+SmartAdServer(sas_pageid,sas_formatid,sas_target);
+</script>
+<noscript>
+<a href="http://www4.smartadserver.com/call/pubjumpi/28323/188831/11313/M/[timestamp]/?">
+<img src="http://www4.smartadserver.com/call/pubi/28323/188831/11313/M/[timestamp]/?" border="0" alt="" /></a>
+</noscript>
+
+<script type="text/javascript">
+
+	(function() {
+
+		var useSSL = 'https:' == document.location.protocol;
+
+		var src = ( useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+
+		document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+
+	})();
+
+</script>
+
+<script type='text/javascript'>
+
+	googletag.cmd.push(function() {
+
+	googletag.defineSlot(
+		'/14668010/secuobs/home',
+		[[728, 90], [728, 200]],
+		'div-gpt-mega-1')
+		.addService(googletag.pubads())
+		;
+	googletag.defineSlot(
+		'/14668010/secuobs/home',
+		[[300, 250], [300, 600]],
+		'div-gpt-mpu-1')
+		.addService(googletag.pubads())
+		.setTargeting("pos", "1")
+		;
+	googletag.defineSlot(
+		'/14668010/secuobs/home',
+		[[120, 600], [160, 600]],
+		'div-gpt-sky-right')
+		.addService(googletag.pubads())
+		.setTargeting("pos", "right")
+		;
+
+	googletag.pubads().enableSyncRendering();
+
+	googletag.enableServices();
+
+	});
+
+</script>
+
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<center>
+<table border="0" cellpadding="1" cellspacing="1" width="990">
+<tr>
+<td valign=top>
+<table border="0" cellpadding="0" cellspacing="0" >
+<tr valign="top">
+<td height="77">
+<table align="center" bgcolor="#333399" border="0" cellpadding="0" cellspacing="0">
+<tr valign="top" align=center>
+<td colspan=3 bgcolor=white align=center>
+<table width=980 border=0 align=left>
+<tr><td align=left><div align=left>
+<link rel="stylesheet" media="all" type="text/css" href="tooltip.css" /><table width=100% height="82"  bordercolor="#003333" bgcolor="#FFFFFF" style="border:1px solid;text-align: center;position:center;-moz-border-radius-bottom-right: 10px;-moz-border-radius-bottom-left: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;-moz-border-radius-top-right: 10px;-moz-border-radius-top-left: 10px;border-top-right-radius: 10px;border-top-left-radius: 10px;padding-top: 8px;padding-bottom: 5px;">
+<tr>    <td width="128">&nbsp;&nbsp;<img src="bitcoin_jap.png" width="124" height="118" /></td>    <td width="818"><span style="font-family: Arial, Helvetica, sans-serif;    font-size: 14px;"><span style="font-size: 12px"><strong>Contribuez &agrave; SecuObs en envoyant des bitcoins ou des dogecoins<!--A chaque 0.2 btc ou 400 000 dogecoins un nouvel article sera <s>produit</s> libÃ©rÃ©--></strong>.<br />      <div align=center class="box-cont">Nouveaux articles (fr): <a href="https://blockchain.info/address/1pwnthhW21zdnQ5WucjmnF3pk9puT5fDF">1pwnthhW21zdnQ5WucjmnF3pk9puT5fDF</a><span class="tooltip tooltip-bottom-center wild-wasabi"><img src="1pwnthhW21zdnQ5WucjmnF3pk9puT5fDF.png"> <span class="tooltip-triangle wild-wasabi-triangle"></span></span></div>
+      <div align=center class="box-cont">Am&eacute;lioration du site: <a href="https://blockchain.info/address/1hckU85orcGCm8A9hk67391LCy4ECGJca">1hckU85orcGCm8A9hk67391LCy4ECGJca</a><span class="tooltip tooltip-bottom-center wild-wasabi"><div class="t2"><img src="1hckU85orcGCm8A9hk67391LCy4ECGJca.png"></div> <span class="tooltip-triangle wild-wasabi-triangle"></span></span></div></span></span><span style="font-size:12px;font-family: Arial, Helvetica, sans-serif;">
+      <div align=center class="box-cont">Tips: <a href="https://dogechain.info/address/DLovLUzkYsFNbAT5xwewQ6BAWztH4MtDgn">DLovLUzkYsFNbAT5xwewQ6BAWztH4MtDgn</a><span class="tooltip tooltip-bottom-center wild-wasabi"><img src="DLovLUzkYsFNbAT5xwewQ6BAWztH4MtDgn.png"> <span class="tooltip-triangle wild-wasabi-triangle"></span></span></div>      <br />      <strong>Contribute to SecuObs by sending bitcoins or dogecoins. </strong><br />
+<div align=center class="box-cont">New content (en): <a href="https://blockchain.info/address/1pwnwwLjiu8U6jgqEchPXibM2dJA2CqQq">1pwnwwLjiu8U6jgqEchPXibM2dJA2CqQq</a><span class="tooltip tooltip-bottom-center wild-wasabi"><div class="t2"><img src="1pwnwwLjiu8U6jgqEchPXibM2dJA2CqQq.png"></div> <span class="tooltip-triangle wild-wasabi-triangle"></span></span></div>
+<div align=center class="box-cont">New website: <a href="https://blockchain.info/address/1hckU85orcGCm8A9hk67391LCy4ECGJca">1hckU85orcGCm8A9hk67391LCy4ECGJca</a><span class="tooltip tooltip-bottom-center wild-wasabi"><div class="t2"><img src="1hckU85orcGCm8A9hk67391LCy4ECGJca.png"></div> <span class="tooltip-triangle wild-wasabi-triangle"></span></span></div>
+<br><div align=center class="box-cont"><a href=""><span style="font-size:8px">44i3VeDHHoL5U6cULcgP6gPWw4p2oCoSGZXepBSDV42mGuLpuSbn5Kh3uGJ8Z9YqkaRwbQqq8op4nShvptRMByNxQFfBvVd</a></span><span class="tooltip tooltip-bottom-center wild-wasabi"><div class="t2"><img src="44i3VeDHHoL5U6cULcgP6gPWw4p2oCoSGZXepBSDV42mGuLpuSbn5Kh3uGJ8Z9YqkaRwbQqq8op4nShvptRMByNxQFfBvVd.png"></div <span class="tooltip-triangle wild-wasabi-triangle"></span></span></div>         </td>    <td width="68"><img src="dogecoin_logo.png" width="118" height="118" /></td></tr></table>
+
+<div id='mba'></div>
+<div id=sloz>
+<script type="text/javascript">
+
+document.getElementById("mba").innerHTML = '';GA_googleFillSlot("ho-m");
+</script>
+</div>
+<script type="text/javascript">
+var tagg=document.getElementById('sloz').innerHTML;if (tagg.length < 1000 ) {document.getElementById("mba").innerHTML = '';}
+</script>
+
+
+</div><td>
+<div align=right>
+<form method="get" action="http://www.google.fr/custom" target="_top">
+<b>Chercher :</b><input type="hidden" name="domains" value="www.secuobs.com">
+<input type="text" name="q" size="10" maxlength="255" value="">
+<input type="hidden" name="sitesearch" value="">
+<input type="hidden" name="sitesearch" value="www.secuobs.com" checked="checked">
+<input type="submit" name="sa" value="Go" />
+<input type="hidden" name="client" value="pub-7670419794937883">
+<input type="hidden" name="forid" value="1">
+<input type="hidden" name="channel" value="3516851159">
+<input type="hidden" name="ie" value="ISO-8859-1">
+<input type="hidden" name="oe" value="ISO-8859-1">
+<input type="hidden" name="flav" value="0000">
+<input type="hidden" name="sig" value="nkGK4imLEyzEpn7g">
+<input type="hidden" name="cof" value="GALT:#9A2C06;GL:1;DIV:#33FFFF;VLC:D04900;AH:center;BGC:FFFFFF;LBGC:FFFFFF;ALC:440066;LC:440066;T:336699;GFNT:223472;GIMP:223472;LH:14;LW:50;L:http://secuobs.com/logo_secuobs-100x100.jpg;S:http://secuobs.com;FORID:1;">
+<input type="hidden" name="hl" value="fr">
+</form>
+<form action="https://www.secuobs.com/cgi-bin/newsletter.cgi" method="post">
+<b>Newsletter : </b><input type="hidden" name="flavor" value="subscribe"><input type="hidden" name="list" value="Secuobs.com"><input type="text" name="email" value="" size="8">&nbsp;<input type="submit" value="Go" />
+</form>
+<hr size=1 color=black >
+
+</div>
+</table>
+
+<tr valign="bottom" align="center">
+<td width=120 bgcolor="#ffffff" valign=top rowspan=2 height="70">
+<div align="center">
+<span class=col>
+<table><tr><td>
+<div align=center>
+<br><table border="0" width=120 cellpadding="1" cellspacing="1"> <tr> <td valign=bottom colspan=2><span class=col><b>Revues :</b></span></tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2"><span class=col>
+- <a href="/revue/index-list0.shtml">Presse</a><br>
+- <a href="/revue/frindex-list0.shtml">Presse FR</a><br>
+- <a href="/videos/index-list0.shtml">Vid&eacute;os</a><br>
+- <a href="/twitter/index-list0.shtml">Twitter</a><br>
+- <a href="/articles/index-list0.shtml">Secuobs</a><br><br>
+</span>
+</div><div align=right></div></td> </tr> <tr><td colspan=2> <table width=100%><tr> <td bgcolor="#003366"></td><td height="1" bgcolor="#003366"></td></table></tr></table>
+
+<br><a href="http://twitter.com/secuobs" target="_blank"><img src=/images/tw.jpg border=0></img></a><br>
+<br><div id='sky'></div>
+<div id=slot>
+<script type="text/javascript">
+
+document.getElementById("sky").innerHTML = '';GA_googleFillSlot("ho-s"); 
+</script>
+</div>
+<script type="text/javascript">
+var tagg=document.getElementById('slot').innerHTML;if (tagg.length < 1000 ) {document.getElementById("sky").innerHTML = '';}
+</script>
+
+
+
+
+<br><table width=120 border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td ><span class=col><b>Sommaires :</span></b></td>
+<td height=20><div align="right">
+</b></div></td>
+</tr>
+<tr>
+<td bgcolor="#003366"></td>
+<td height="1" bgcolor="#003366"></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F2F2F2"><span class=col>
+ 
+- <a href="/sommaires/Tendances.html">Tendances</a><br>
+
+- <a href="/sommaires/Failles.html">Failles</a><br>
+
+- <a href="/sommaires/Virus.html">Virus</a><br>
+
+- <a href="/sommaires/Concours.html">Concours</a><br>
+
+- <a href="/sommaires/Reportages.html">Reportages</a><br>
+
+- <a href="/sommaires/Acteurs.html">Acteurs</a><br>
+
+- <a href="/sommaires/Outils.html">Outils</a><br>
+
+- <a href="/sommaires/Breves.html">Breves</a><br>
+
+- <a href="/sommaires/Infrastructures.html">Infrastructures</a><br>
+
+- <a href="/sommaires/Livres.html">Livres</a><br>
+
+- <a href="/sommaires/Tutoriels.html">Tutoriels</a><br>
+
+- <a href="/sommaires/Interviews.html">Interviews</a><br>
+
+- <a href="/sommaires/Podcasts.html">Podcasts</a><br>
+
+- <a href="/sommaires/Communiques.html">Communiques</a><br>
+
+- <a href="/sommaires/USBsploit.html">USBsploit</a><br>
+ - <span class=col><a href="/sommaires/comments.shtml#comments">Commentaires</span></a><br>
+</span><br>
+
+</div></td>
+</tr>
+
+<table width=120 border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td bgcolor="#003366"></td>
+<td height="1" bgcolor="#003366"></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F2F2F2"><div align="center">
+</div></td>
+</tr>
+</table>
+
+
+<br><table border="0" width=120 cellpadding="1" cellspacing="1"> <tr> <td valign=bottom colspan=2><span class=col><b>Revue Presse:</b></span></tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2"><span class=col>
+- <a href="/revue/index-list0.shtml">Tous</a><br>
+- <a href="/revue/frindex-list0.shtml">Francophone</a>
+<br> - <a href="/revue/flnews0.shtml">Par mot cl&eacute;</a><br>
+- <a href="/revue/alsource0.shtml">Par site</a><br>
+- <a href="/revue/btagwall.shtml">Le tagwall</a><br></span>
+</div><div align=right><br></div></td> </tr> <tr><td colspan=2> <table width=100%><tr> <td bgcolor="#003366"></td><td height="1" bgcolor="#003366"></td></table></tr></table>
+
+<br><table border="0" width=120 cellpadding="1" cellspacing="1"> <tr> <td valign=bottom colspan=2><span class=col><b>Top bi-hebdo:</b></span></tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2"><span class=col>
+- <a href="/gentop/index-list0.shtml">Ensemble</a><br>
+- <a href="/gentop/aindex-list0.shtml">Articles</a><br>
+- <a href="/gentop/rindex-list0.shtml">Revue</a><br>
+- <a href="/gentop/vindex-list0.shtml">Videos</a><br>
+- <a href="/gentop/tindex-list0.shtml">Twitter</a><br>
+- <a href="/gentop/autindex-list0.shtml">Auteurs</a><br>
+</div><div align=right><br></div></td> </tr> <tr><td colspan=2> <table width=100%><tr> <td bgcolor="#003366"></td><td height="1" bgcolor="#003366"></td></table></tr></table>
+
+<br><table border="0" width=120 cellpadding="1" cellspacing="1"> <tr> <td valign=bottom colspan=2><span class=col><b>Articles :</b></span></tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2"><span class=col>
+- <a href="/articles/flnews0.shtml">Par mot cl&eacute;</a><br>
+- <a href="/articles/aalsource0.shtml">Par auteur</a><br>
+- <a href="/articles/alsource0.shtml">Par organisme</a><br>
+- <a href="/articles/bvtagwall.shtml">Le tagwall</a><br></span>
+</div><div align=right><br></div></td> </tr> <tr><td colspan=2> <table width=100%><tr> <td bgcolor="#003366"></td><td height="1" bgcolor="#003366"></td></table></tr></table>
+
+<br><table border="0" width=120 cellpadding="1" cellspacing="1"> <tr> <td valign=bottom colspan=2><span class=col><b>Videos :</b></span></tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2"><span class=col>
+- <a href="/videos/index-list0.shtml">Toutes</a>
+<br> - <a href="/videos/flnews0.shtml">Par mot cl&eacute;</a><br>
+- <a href="/videos/alsource0.shtml">Par site</a><br>
+- <a href="/videos/bvtagwall.shtml">Le tagwall</a><br></span>
+</div><div align=right><br></div></td> </tr> <tr><td colspan=2> <table width=100%><tr> <td bgcolor="#003366"></td><td height="1" bgcolor="#003366"></td></table></tr></table>
+
+<br><table border="0" width=120 cellpadding="1" cellspacing="1"> <tr> <td valign=bottom colspan=2><span class=col><b>Twitter :</b></span></tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2"><span class=col>
+- <a href="/twitter/index-list0.shtml">Tous</a>
+<br> - <a href="/twitter/flnews0.shtml">Par mot cl&eacute;</a><br>
+- <a href="/twitter/alsource0.shtml">Par compte</a><br>
+- <a href="/twitter/btagwall.shtml">Le tagwall</a><br></span>
+</div><div align=right><br></div></td> </tr> <tr><td colspan=2> <table width=100%><tr> <td bgcolor="#003366"></td><td height="1" bgcolor="#003366"></td></table></tr></table>
+
+
+<br><table border="0" width=120 cellpadding="1" cellspacing="1"> <tr> <td valign=bottom colspan=2><span class=col><b>Commentaires :</b></span></tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2"><span class=col>
+- <a href="/sommaires/commentsBreves.shtml#comments">Breves</a><br>- <a href="/sommaires/commentsVirus.shtml#comments">Virus</a><br>- <a href="/sommaires/commentsFailles.shtml#comments">Failles</a><br>- <a href="/sommaires/commentsOutils.shtml#comments">Outils</a><br>- <a href="/sommaires/commentsTutoriels.shtml#comments">Tutoriels</a><br>- <a href="/sommaires/commentsTendances.shtml#comments">Tendances</a><br>- <a href="/sommaires/commentsActeurs.shtml#comments">Acteurs</a><br>- <a href="/sommaires/commentsReportages.shtml#comments">Reportages</a><br>- <a href="/sommaires/commentsInfrastructures.shtml#comments">Infrastructures</a><br>- <a href="/sommaires/commentsInterviews.shtml#comments">Interviews</a><br>- <a href="/sommaires/commentsConcours.shtml#comments">Concours</a><br>- <a href="/sommaires/commentsLivres.shtml#comments">Livres</a><br>- <a href="/sommaires/commentsCommuniques.shtml#comments">Communiques</a><br>
+</div><div align=right><br></div></td> </tr> <tr><td colspan=2> <table width=100%><tr> <td bgcolor="#003366"></td><td height="1" bgcolor="#003366"></td></table></tr></table>
+
+<br><table width="120" border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td ><span class=col><b>RSS/XML :</b></span></td>
+<td height=20><div align="right"><span class=col>
+</b></span></div></td>
+</tr>
+<tr>
+<td bgcolor="#003366"></td>
+<td height="1" bgcolor="#003366"></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F2F2F2"><span class=col>
+- <a href="/rss/secuobs.xml" target=_blank>Articles</a><br>
+- <a href="/rss/cxml10.xml" target=_blank>Commentaires</a><br>
+- <a href="/revue/xml/xml10.xml" target=_blank>Revue</a><br>
+- <a href="/revue/xml/frxml10.xml" target=_blank>Revue FR</a><br>
+- <a href="/videos/xml/xml10.xml" target=_blank>Videos</a><br>
+- <a href="/twitter/xml/xml10.xml" target=_blank>Twitter</a><br>
+<br>
+</div></td>
+</tr>
+</table>
+<table width="120" border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td bgcolor="#003366"></td>
+<td height="1" bgcolor="#003366"></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F2F2F2"><div align="center">
+</div></td>
+</tr>
+</table>
+
+<br><table width="120" border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td ><span class=col><b>RSS SecuObs :</b></span></td>
+<td height=20><div align="right"><span class=col>
+</span></div></td>
+</tr>
+<tr>
+<td bgcolor="#003366"></td>
+<td height="1" bgcolor="#003366"></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F2F2F2"><span class=col>
+- <a href=http://www.secuobs.com/articles/xml/scuritxml10.xml target=_blank>sécurité</a><br>- <a href=http://www.secuobs.com/articles/xml/exploitxml10.xml target=_blank>exploit</a><br>- <a href=http://www.secuobs.com/articles/xml/windowsxml10.xml target=_blank>windows</a><br>- <a href=http://www.secuobs.com/articles/xml/attaquexml10.xml target=_blank>attaque</a><br>- <a href=http://www.secuobs.com/articles/xml/outilxml10.xml target=_blank>outil</a><br>- <a href=http://www.secuobs.com/articles/xml/microsoftxml10.xml target=_blank>microsoft</a><br>
+</span>
+<br>
+</div></td>
+</tr>
+</table>
+<table width="120" border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td bgcolor="#003366"></td>
+<td height="1" bgcolor="#003366"></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F2F2F2"><div align="center">
+</div></td>
+</tr>
+</table>
+
+<br><table width="120" border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td ><span class=col><b>RSS Revue :</b></span></td>
+<td height=20><div align="right"><span class=col>
+</span></div></td>
+</tr>
+<tr>
+<td bgcolor="#003366"></td>
+<td height="1" bgcolor="#003366"></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F2F2F2"><span class=col>
+- <a href=http://www.secuobs.com/revue/xml/securityxml10.xml target=_blank>security</a><br>- <a href=http://www.secuobs.com/revue/xml/microsoftxml10.xml target=_blank>microsoft</a><br>- <a href=http://www.secuobs.com/revue/xml/windowsxml10.xml target=_blank>windows</a><br>- <a href=http://www.secuobs.com/revue/xml/hackerxml10.xml target=_blank>hacker</a><br>- <a href=http://www.secuobs.com/revue/xml/attackxml10.xml target=_blank>attack</a><br>- <a href=http://www.secuobs.com/revue/xml/networkxml10.xml target=_blank>network</a><br>
+</span>
+<br>
+</div></td>
+</tr>
+</table>
+<table width="120" border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td bgcolor="#003366"></td>
+<td height="1" bgcolor="#003366"></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F2F2F2"><div align="center">
+</div></td>
+</tr>
+</table>
+
+
+<br><table width="120" border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td ><span class=col><b>RSS Videos :</b></span></td>
+<td height=20><div align="right"><span class=col>
+</span></div></td>
+</tr>
+<tr>
+<td bgcolor="#003366"></td>
+<td height="1" bgcolor="#003366"></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F2F2F2"><span class=col>
+- <a href=http://www.secuobs.com/videos/xml/curitxml10.xml target=_blank>curit</a><br>- <a href=http://www.secuobs.com/videos/xml/securityxml10.xml target=_blank>security</a><br>- <a href=http://www.secuobs.com/videos/xml/biometxml10.xml target=_blank>biomet</a><br>- <a href=http://www.secuobs.com/videos/xml/metasploitxml10.xml target=_blank>metasploit</a><br>- <a href=http://www.secuobs.com/videos/xml/biometricxml10.xml target=_blank>biometric</a><br>- <a href=http://www.secuobs.com/videos/xml/ckingxml10.xml target=_blank>cking</a><br>
+</span>
+<br>
+</div></td>
+</tr>
+</table>
+<table width="120" border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td bgcolor="#003366"></td>
+<td height="1" bgcolor="#003366"></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F2F2F2"><div align="center">
+</div></td>
+</tr>
+</table>
+
+<br><table width="120" border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td ><span class=col><b>RSS Twitter :</b></span></td>
+<td height=20><div align="right"><span class=col>
+</span></div></td>
+</tr>
+<tr>
+<td bgcolor="#003366"></td>
+<td height="1" bgcolor="#003366"></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F2F2F2"><span class=col>
+- <a href=http://www.secuobs.com/twitter/xml/securityxml10.xml target=_blank>security</a><br>- <a href=http://www.secuobs.com/twitter/xml/linuxxml10.xml target=_blank>linux</a><br>- <a href=http://www.secuobs.com/twitter/xml/botnetxml10.xml target=_blank>botnet</a><br>- <a href=http://www.secuobs.com/twitter/xml/attackxml10.xml target=_blank>attack</a><br>- <a href=http://www.secuobs.com/twitter/xml/metasploitxml10.xml target=_blank>metasploit</a><br>- <a href=http://www.secuobs.com/twitter/xml/ciscoxml10.xml target=_blank>cisco</a><br>
+</span>
+<br></div></td>
+</tr>
+</table>
+<table width="120" border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td bgcolor="#003366"></td>
+<td height="1" bgcolor="#003366"></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F2F2F2"><div align="center">
+</div></td>
+</tr>
+</table>
+
+<br><table border="0" width=120 cellpadding="1" cellspacing="1"> <tr> <td valign=bottom colspan=2><span class=col><b>RSS Comments :</b></span></tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2"><span class=col>
+- <a href="/rss/cxml10Breves.xml" target=_blank>Breves</a><br>- <a href="/rss/cxml10Virus.xml" target=_blank>Virus</a><br>- <a href="/rss/cxml10Failles.xml" target=_blank>Failles</a><br>- <a href="/rss/cxml10Outils.xml" target=_blank>Outils</a><br>- <a href="/rss/cxml10Tutoriels.xml" target=_blank>Tutoriels</a><br>- <a href="/rss/cxml10Tendances.xml" target=_blank>Tendances</a><br>- <a href="/rss/cxml10Acteurs.xml" target=_blank>Acteurs</a><br>- <a href="/rss/cxml10Reportages.xml" target=_blank>Reportages</a><br>- <a href="/rss/cxml10Infrastructures.xml" target=_blank>Infrastructures</a><br>- <a href="/rss/cxml10Interviews.xml" target=_blank>Interviews</a><br>- <a href="/rss/cxml10Concours.xml" target=_blank>Concours</a><br>- <a href="/rss/cxml10Livres.xml" target=_blank>Livres</a><br>- <a href="/rss/cxml10Communiques.xml" target=_blank>Communiques</a><br>
+</div><div align=right><br></div></td> </tr> <tr><td colspan=2> <table width=100%><tr> <td bgcolor="#003366"></td><td height="1" bgcolor="#003366"></td></table></tr></table>
+
+<br><table border="0" width=120 cellpadding="1" cellspacing="1"> <tr> <td valign=bottom colspan=2><span class=col><b>RSS OPML :</b></span></tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2"><span class=col>
+<span class=col>
+- <a href=http://www.secuobs.com/revue/xml/frxml10.opml target=_blank>Fran&ccedil;ais</a><br>
+- <a href=http://www.secuobs.com/revue/xml/xml10.opml target=_blank>International</a><br>
+</span><br></div><div align=right></div></td></tr><tr><td colspan=2> <table width=100%><tr> <td bgcolor="#003366"></td><td height="1" bgcolor="#003366"></td></table></tr></table>
+
+<br><center><a href="http://www.matoumba.com/linkio.php?addurl=http://www.secuobs.com/rss/secuobs.xml" target="_blank"><img src="/images/ico_mt.gif" alt="" border="0" width=110></a><br>
+<a href="http://www.wikio.fr/subscribe?url=http://www.secuobs.com/rss/secuobs.xml" target="_blank"><img src="/images/ico_wk.gif" alt="" border="0" width=110></a><br>
+<a href="http://www.netvibes.com/subscribe.php?url=http://www.secuobs.com/rss/secuobs.xml" target="_blank"><img src="/images/ico_nv.gif" alt="" border="0" width=110></a><br>
+<a href="http://www.bloglines.com/sub/http://www.secuobs.com/rss/secuobs.xml" target="_blank"><img src="/images/ico_bl.gif" alt="" border="0" width=110></a><br>
+<a href="http://fusion.google.com/add?feedurl=http://www.secuobs.com/rss/secuobs.xml" target="_blank"><img src="/images/ico_gr.gif" alt="" border="0" width=110></a><br>
+<a href="http://add.my.yahoo.com/rss?url=http://www.secuobs.com/rss/secuobs.xml" target="_blank"><img src="/images/ico_my.gif" alt="" border="0" width=110></a><br>
+<a href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=http://www.secuobs.com/rss/secuobs.xml" target="_blank"><img src="/images/ico_ng.gif" alt="" border="0" width=110></a>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-295564-2";
+urchinTracker();
+</script>
+</table></span>
+</div>
+<td bgcolor="#ffffff" height="70" valign=top align=center width=549>
+<div align="center">
+<a href="/index.html">
+<img src="http://www.secuobs.com/images/altheaderbb.gif" border="0" width=530></a>
+</div>
+</td>
+<td rowspan=2 valign=top bgcolor="#ffffff" width=300 align=right>
+<span class=col>
+<table width=300 border="0" cellpadding="1" cellspacing="1" align=right><tr><td>
+<br>
+<div id='mpw'></div>
+<div id=slox>
+<script type="text/javascript">
+
+document.getElementById("mpw").innerHTML = '';GA_googleFillSlot("ho-p");
+</script>
+</div>
+<script type="text/javascript">
+var tagg=document.getElementById('slox').innerHTML;if (tagg.length < 1000 ) {document.getElementById("mpw").innerHTML = '';}
+</script>
+
+
+<br>
+
+<br><table border="0" width=300 cellpadding="1" cellspacing="1"> <tr> <td valign=bottom><span class=col><b>Revue de presse francophone :</b></span></td> <td height=20><div align="right"><span class=col><a href="/revue/xml/frxml10.xml" target="_blank"><img src="/images/xml.gif" border="0"></a> </b></span></div></td> </tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2"><span class=col>- <a href=/revue/news/604735.shtml>Appaloosa   AppDome nouent un partenariat pour accompagner les entreprises dans le déploiement et la protection des applications mobiles</a><br>- <a href=/revue/news/604734.shtml>D-Link offre une avec un routeur VPN sans fil AC</a><br>- <a href=/revue/news/604728.shtml>19 mai Paris Petit-Déjeuner Coreye   Développer son business à l'abri des cyberattaques</a><br>- <a href=/revue/news/604725.shtml>POYNTING PRESENTE LA NOUVELLE ANTENNE OMNI-291, SPECIALE MILIEU MARITIME, CÔTIER ET MILIEU HUMIDE</a><br>- <a href=/revue/news/604724.shtml> Flexera Software   Les utilisateurs français de PC progressent dans l'application de correctifs logiciels, mais des défis de tailles subsistent</a><br>- <a href=/revue/news/604723.shtml>Riverbed lance SD-WAN basé sur le cloud</a><br>- <a href=/revue/news/604718.shtml>Fujitsu multi-récompensé   VMware lui décerne plusieurs   Partner Innovation Awards   à l'occasion du Partner Leadership Summit</a><br>- <a href=/revue/news/604715.shtml>Zscaler Private Access   sécuriser l'accès à distance en supprimant les risques inhérents aux réseaux privés virtuels </a><br>- <a href=/revue/news/604710.shtml>QNAP annonce la sortie de QTS 4.2.1</a><br>- <a href=/revue/news/604704.shtml>Une enquête réalisée par la société de cyber sécurité F-Secure a décelé des milliers de vulnérabilités graves, potentiellement utilisables par des cyber criminels pour infiltrer l'infrastru</a><br>- <a href=/revue/news/604703.shtml>Trouver le juste équilibre entre une infrastructure dédiée et cloud   le dilemme de la distribution numérique</a><br>- <a href=/revue/news/604701.shtml>3 juin - Fleurance - Cybersécurité   Territoires</a><br>- <a href=/revue/news/604700.shtml>Cyber-assurances   Seules 40 pourcents des entreprises françaises sont couvertes contre les violations de sécurité et les pertes de données </a><br>- <a href=/revue/news/604698.shtml>Des étudiants de l'ESIEA inventent   CheckMyHTTPS     un logiciel qui vérifie que vos connexions WEB sécurisées ne sont pas interceptées</a><br>- <a href=/revue/news/604695.shtml>Les produits OmniSwitch d'Alcatel-Lucent Enterprise  ALE  gagnent en sécurité pour lutter contre les cyber-attaques modernes</a><br></span></div><div align=right><br><a href="/revue/frindex-list0.shtml"><span class=col>+ d'articles en français de la revue de presse</span></a></div></td> </tr> <tr><td colspan=2> <table width=300><tr> <td bgcolor="#003366"></td><td height="1" bgcolor="#003366"></td></table> </tr> </table>
+
+<br><table width="300" border="0" cellpadding="1" cellspacing="1"> <tr> <td valign=bottom><span class=col><b>Dernier articles de SecuObs :</b></span></td> <td height=20><div align="right"><span class=col><a href="/rss/secuobs.xml" target="_blank"><img src="/images/xml.gif" border="0"></a></span></b></div></td> </tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr><td colspan="2" bgcolor="#F2F2F2"><span class=col>- <A HREF="/news/08012016-dip.shtml">DIP, solution de partage d'informations automatisée </a><br>- <A HREF="/news/30102015_sqreen.shtml">Sqreen, protection applicative intelligente de nouvelle génération </a><br>- <A HREF="/news/02062014-deny-all-beeware.shtml">Renaud Bidou (Deny All): "L'innovation dans le domaine des WAFs s'oriente vers plus de bon sens et d'intelligence, plus de flexibilité et plus d'ergonomie"</a><br>- <A HREF="/news/28042014-vigik-rsa.shtml">Mises à jour en perspective pour le système Vigik</a><br>- <A HREF="/news/24042014-aegis.shtml">Les russes ont-ils pwn le système AEGIS ?</a><br>- <A HREF="/news/10032014-ministere-interieur-censure.shtml">Le ministère de l'intérieur censure une conférence au Canada</a><br>- <A HREF="/news/24022014-programme-cansecwest-2014.shtml">Saut d'air gap, audit de firmware et (in)sécurité mobile au programme de Cansecwest 2014</a><br>- <A HREF="/news/18022014-jtrig-gchq-anonymous.shtml">GCHQ: Le JTRIG torpille Anonymous qui torpille le JTRIG (ou pas)</a><br>- <A HREF="/news/0422014-FIC2014-entree-en-territoire-inconnu.shtml">#FIC2014: Entrée en territoire inconnu</a><br>- <A HREF="/news/29012014-senat-monnaies-virtuelles.shtml">Le Sénat investit dans les monnaies virtuelles</a><br></span></div><div align="right"><br><a href="/index.html"><span class=col>+ d'articles publi&eacute;s par SecuObs</span></a></span><b></div></td> </tr> </table> <table width="300" border="0" cellpadding="1" cellspacing="1"> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2"><div align="center"> </div></td> </tr> </table>
+
+<br><table border="0" width=300 cellpadding="1" cellspacing="1"> <tr> <td valign=bottom><span class=col><b>Revue de presse internationale :</b></span></td> <td height=20><div align="right"><span class=col><a href="/revue/xml/xml10.xml" target="_blank"><img src="/images/xml.gif" border="0"></a> </span></div></td> </tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2"><span class=col>- <a href=/revue/news/604770.shtml>VEHICLE CYBERSECURITY  DOT and Industry Have Efforts Under Way, but DOT Needs to Define Its Role in Responding to a Real-world Attack</a><br>- <a href=/revue/news/604769.shtml>Demand letter served on poll body over disastrous  Comeleak  breach</a><br>- <a href=/revue/news/604768.shtml>The Minimin Aims To Be The Simplest Theremin</a><br>- <a href=/revue/news/604767.shtml>Hacking group  PLATINUM  used Windows  own patching system against it</a><br>- <a href=/revue/news/604766.shtml>Hacker With Victims in 100 Nations Gets 7 Years in Prison</a><br>- <a href=/revue/news/604765.shtml>HPR2018  How to make Komboucha Tea</a><br>- <a href=/revue/news/604764.shtml>Circuit Bender Artist bends Fresnel Lens for Art</a><br>- <a href=/revue/news/604763.shtml>FBI Director Suggests iPhone Hacking Method May Remain Secret</a><br>- <a href=/revue/news/604762.shtml>2016 Hack Miami Conference  May 13-15, 2016</a><br>- <a href=/revue/news/604761.shtml>8-bit Video Wall Made From 160 Gaming Keyboards</a><br>- <a href=/revue/news/604760.shtml>In An Era Of Decline, News Sites Can t Afford Poor Web Performance</a><br>- <a href=/revue/news/604759.shtml>BeautifulPeople.com experiences data breach  1m affected</a><br>- <a href=/revue/news/604758.shtml>Swedish Air Space Infringed, Aircraft Not Required</a><br>- <a href=/revue/news/604757.shtml>Why cybercriminals attack healthcare more than any other industry</a><br>- <a href=/revue/news/604756.shtml>Setting the Benchmark in the Network Security Forensics Industry</a><br> </div><div align=right><br><a href="/revue/index-list0.shtml"><span class=col>+ d'articles mondiaux de la revue de presse<b></span></a></div></td> </tr> <tr><td colspan=2> <table width=300><tr> <td bgcolor="#003366"></td><td height="1" bgcolor="#003366"></td></table> </tr> </table>
+
+<div id='mpw2'></div>
+<div id=slox2>
+<script type="text/javascript">
+
+document.getElementById("mpw2").innerHTML = '';GA_googleFillSlot("ho-p");
+</script>
+</div>
+<script type="text/javascript">
+var tagg=document.getElementById('slox2').innerHTML;if (tagg.length < 1000 ) {document.getElementById("mpw2").innerHTML = '';}
+</script>
+
+
+
+<br><table border="0" width=300 cellpadding="1" cellspacing="1"> <tr> <td valign=bottom><span class=col><b>Annuaire des videos</b></span></td> <td height=20><div align="right"><span class=col><a href="/videos/xml/xml10.xml" target="_blank"><img src="/images/xml.gif" border="0"></a> </b></span></div></td> </tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2"><span class=col>- <a href=/videos/news/36966.shtml>FUZZING ON LINE PART THREE</a><br>- <a href=/videos/news/36965.shtml>Official Maltego tutorial 5 Writing your own transforms</a><br>- <a href=/videos/news/36964.shtml>Official Maltego tutorial 6 Integrating with SQL DBs</a><br>- <a href=/videos/news/36963.shtml>Official Maltego tutorial 3 Importing CSVs  spreadsheets</a><br>- <a href=/videos/news/36962.shtml>install zeus botnet</a><br>- <a href=/videos/news/36961.shtml>Eloy Magalhaes</a><br>- <a href=/videos/news/36960.shtml>Official Maltego tutorial 1 Google s websites</a><br>- <a href=/videos/news/36959.shtml>Official Maltego tutorial 4 Social Networks</a><br>- <a href=/videos/news/36958.shtml>Blind String SQL Injection</a><br>- <a href=/videos/news/36957.shtml>backdoor linux root from r57 php shell  VPS  khg crew redc00de</a><br>- <a href=/videos/news/36956.shtml>How To Attaque Pc With Back Track 5 In Arabique</a><br>- <a href=/videos/news/36955.shtml>RSA Todd Schomburg talks about Roundup Ready lines available in 2013</a><br>- <a href=/videos/news/36954.shtml>Nessus Diagnostics  Troubleshooting</a><br>- <a href=/videos/news/36953.shtml>Panda Security   Vidcast Panda GateDefender Performa  Parte 2 de 2 </a><br>- <a href=/videos/news/36952.shtml>MultiPyInjector Shellcode Injection</a><br></span></div><div align=right><br><a href="/videos/index-list0.shtml"><span class=col>+ de videos de l'annuaire</span></a></div></td> </tr> <tr><td colspan=2> <table width=300><tr> <td bgcolor="#003366"></td><td height="1" bgcolor="#003366"></td></table> </tr> </table>
+
+<br><table border="0" width=300 cellpadding="1" cellspacing="1"> <tr> <td valign=bottom><span class=col><b>Revue Twitter</b></span></td> <td height=20><div align="right"><span class=col><a href="/twitter/xml/xml10.xml" target="_blank"><img src="/images/xml.gif" border="0"></a> </b></span></div></td> </tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2"><span class=col>- <a href=http://www.secuobs.com/twitter/news/349612.shtml target=_blank> RT @fpalumbo: Cisco consistently leading the way ? buys vCider to boost its distributed cloud vision #CiscoONE </a><br>- <a href=http://www.secuobs.com/twitter/news/349611.shtml target=_blank> @mckeay Looks odd... not much to go on (prob some slideshow/vid app under Linux)</a><br>- <a href=http://www.secuobs.com/twitter/news/349610.shtml target=_blank> [SuggestedReading] Using the HTML5 Fullscreen API for Phishing Attacks </a><br>- <a href=http://www.secuobs.com/twitter/news/349609.shtml target=_blank> RT @BrianHonan: Our problems are not technical but cultural. OWASP top 10 has not changed over the years @joshcorman #RSAC</a><br>- <a href=http://www.secuobs.com/twitter/news/349608.shtml target=_blank> RT @mikko: Wow. Apple kernels actually have a function called PE_i_can_has_debugger: </a><br>- <a href=http://www.secuobs.com/twitter/news/349607.shtml target=_blank> [Blog Spam] Metasploit and PowerShell payloads  </a><br>- <a href=http://www.secuobs.com/twitter/news/349606.shtml target=_blank> PinkiePie Strikes Again, Compromises Google Chrome in Pwnium Contest at Hack in the Box: For the second time thi... </a><br>- <a href=http://www.secuobs.com/twitter/news/349605.shtml target=_blank> @mikko @fslabs y'all wldn't happen to have lat/long data sets for other botnets, wld you? Doing some research (free/open info rls when done)</a><br>- <a href=http://www.secuobs.com/twitter/news/349604.shtml target=_blank> RT @nickhacks: Want to crash a remote host running Snow Leopard?  Just use: nmap -P0 -6 --script=targets-ipv6-multicast-mld #wishiwaskidding</a><br>- <a href=http://www.secuobs.com/twitter/news/349603.shtml target=_blank> An inexpensive proxy service called  is actually a front for #malware distribution - </a><br></span></div><div align=right><br><a href="/twitter/index-list0.shtml"><span class=col>+ de tweets avec la revue Twitter</span></a></div></td> </tr> <tr><td colspan=2> <table width=300><tr> <td bgcolor="#003366"></td><td height="1" bgcolor="#003366"></td></table> </tr> </table>
+
+<br><table border="0" width=300 cellpadding="1" cellspacing="1"> <tr> <td valign=bottom><span class=col><b>Mini-Tagwall</b></span></td><td ><div align="right"></div></td> </tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2">
+
+<span class=col><b>Revue de presse :</b></span> <span class=col> <a href="/revue/aaasecurity0.shtml">security</a>,  <a href="/revue/aaamicrosoft0.shtml">microsoft</a>,  <a href="/revue/aaawindows0.shtml">windows</a>,  <a href="/revue/aaahacker0.shtml">hacker</a>,  <a href="/revue/aaaattack0.shtml">attack</a>,  <a href="/revue/aaanetwork0.shtml">network</a>,  <a href="/revue/aaavulnerability0.shtml">vulnerability</a>,  <a href="/revue/aaagoogle0.shtml">google</a>,  <a href="/revue/aaaexploit0.shtml">exploit</a>,  <a href="/revue/aaamalware0.shtml">malware</a>,  <a href="/revue/aaainternet0.shtml">internet</a>,  <a href="/revue/aaaremote0.shtml">remote</a>,  <a href="/revue/aaaiphone0.shtml">iphone</a></span> <a href="/revue/flnews0.shtml"><span class=col><br><div align=right><br>+ de mots cl&eacute;s pour la revue de presse</div></a></span>
+<br><span class=col><b>Annuaires des videos :</b></span><span class=col> <a href="/videos/aaacurit0.shtml">curit</a>,  <a href="/videos/aaasecurity0.shtml">security</a>,  <a href="/videos/aaabiomet0.shtml">biomet</a>,  <a href="/videos/aaametasploit0.shtml">metasploit</a>,  <a href="/videos/aaabiometric0.shtml">biometric</a>,  <a href="/videos/aaacking0.shtml">cking</a>,  <a href="/videos/aaapassword0.shtml">password</a>,  <a href="/videos/aaawindows0.shtml">windows</a>,  <a href="/videos/aaabotnet0.shtml">botnet</a>,  <a href="/videos/aaadefcon0.shtml">defcon</a>,  <a href="/videos/aaatutorial0.shtml">tutorial</a>,  <a href="/videos/aaacrypt0.shtml">crypt</a>,  <a href="/videos/aaaxploit0.shtml">xploit</a></span> <a href="/videos/flnews0.shtml"><span class=col><br><div align=right><br>+ de mots cl&eacute;s pour les videos</div></a></span>
+<br><span class=col><b>Revue Twitter :</b></span><span class=col> <a href="/twitter/aaasecurity0.shtml">security</a>,  <a href="/twitter/aaalinux0.shtml">linux</a>,  <a href="/twitter/aaabotnet0.shtml">botnet</a>,  <a href="/twitter/aaaattack0.shtml">attack</a>,  <a href="/twitter/aaametasploit0.shtml">metasploit</a>,  <a href="/twitter/aaacisco0.shtml">cisco</a>,  <a href="/twitter/aaadefcon0.shtml">defcon</a>,  <a href="/twitter/aaaphish0.shtml">phish</a>,  <a href="/twitter/aaaexploit0.shtml">exploit</a>,  <a href="/twitter/aaagoogle0.shtml">google</a>,  <a href="/twitter/aaainject0.shtml">inject</a>,  <a href="/twitter/aaaserver0.shtml">server</a>,  <a href="/twitter/aaafirewall0.shtml">firewall</a></span> <a href="/twitter/flnews0.shtml"><span class=col><br><div align=right><br>+ de mots cl&eacute;s pour la revue Twitter</div></a></span>
+
+</td> </tr> <tr><td colspan=2> <table width=300><tr> <td bgcolor="#003366"></td><td height="1" bgcolor="#003366">
+</td></table></tr></table>
+
+<br><table border="0" width=300 cellpadding="1" cellspacing="1"> <tr> <td valign=bottom><span class=col><b>Top bi-hebdo des articles de SecuObs</b></span></td> <td height=20></td> </tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2"><span class=col>- <a href="/articles/news/447.shtml">[Ettercap – Partie 2] Ettercap par l'exemple - Man In the Middle et SSL sniffing</a><br>- <a href="/articles/news/269.shtml">[Infratech - release] version 0.6 de Bluetooth Stack Smasher</a><br>- <a href="/articles/news/841.shtml">[IDS Snort Windows – Partie 2] Installation et configuration </a><br>- <a href="/articles/news/283.shtml">[Infratech - vulnérabilité] Nouvelle version 0.8 de Bluetooth Stack Smasher</a><br>- <a href="/articles/news/1297.shtml">Mises à jour en perspective pour le système Vigik</a><br>- <a href="/articles/news/467.shtml">USBDumper 2 nouvelle version nouvelles fonctions !</a><br>- <a href="/articles/news/973.shtml">EFIPW récupère automatiquement le mot de passe BIOS EFI des Macbook Pro avec processeurs Intel </a><br>- <a href="/articles/news/358.shtml">La sécurité des clés USB mise à mal par USBDUMPER</a><br>- <a href="/articles/news/1275.shtml">Une faille critique de Firefox expose les utilisateurs de Tor Browser Bundle</a><br>- <a href="/articles/news/196.shtml">Installation sécurisée d'Apache Openssl, Php4, Mysql, Mod_ssl, Mod_rewrite, Mod_perl ,  Mod_security</a><br></span></div><div align=right><br><a href="/gentop/aindex-list0.shtml"><span class=col>Voir Le top bi-hebdo des articles de SecuObs en entier</span></a></div></td> </tr> <tr><td colspan=2> <table width=300><tr> <td bgcolor="#003366"></td><td height="1" bgcolor="#003366"></td></table> </tr> </table>
+<br><table border="0" width=300 cellpadding="1" cellspacing="1"> <tr> <td valign=bottom><span class=col><b>Top bi-hebdo de la revue de presse</b></span></td> <td height=20></td> </tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2"><span class=col>- <a href="/revue/news/63801.shtml">StackScrambler and the Tale of a Packet Parsing Bug</a><br></span></div><div align=right><br><a href="/gentop/rindex-list0.shtml"><span class=col>Voir Le top bi-hebdo de la revue de presse en entier</span></a></div></td> </tr> <tr><td colspan=2> <table width=300><tr> <td bgcolor="#003366"></td><td height="1" bgcolor="#003366"></td></table> </tr> </table>
+<br><table border="0" width=300 cellpadding="1" cellspacing="1"> <tr> <td valign=bottom><span class=col><b>Top bi-hebdo de l'annuaire des videos</b></span></td> <td height=20></td> </tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2"><span class=col>- <a href="/videos/news/313.shtml">DC++ Botnet. How To DDos A Hub With Fake IPs.</a><br> - <a href="/videos/news/289.shtml">Comment creer un server botnet!!!!(Réseau de pc zombies)</a><br> - <a href="/videos/news/15968.shtml">Defcon 14   Hard Drive Recovery Part 3</a><br> </span></div><div align=right><br><a href="/gentop/vindex-list0.shtml"><span class=col>Voir Le top bi-hebdo de l'annuaire des videos en entier</span></a></div></td> </tr> <tr><td colspan=2> <table width=300><tr> <td bgcolor="#003366"></td><td height="1" bgcolor="#003366"></td></table> </tr> </table>
+<br><table border="0" width=300 cellpadding="1" cellspacing="1"> <tr> <td valign=bottom><span class=col><b>Top bi-hebdo de la revue Twitter</b></span></td> <td height=20></td> </tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2"><span class=col>- <a href="/twitter/news/633.shtml" target=_blank> RT @secureideas: I believe that all the XSS flaws announced are fixed in CVS.  Will test again tomorrow  if so, release 1.4.3.  #BASESnort</a><br>- <a href="/twitter/news/105787.shtml" target=_blank> Currently, we do not support 100% of the advanced PDF features found in Adobe Reader... At least that's a good idea. </a><br>- <a href="/twitter/news/9887.shtml" target=_blank> VPN (google): German Foreign Office Selects Orange Business for Terrestrial Wide:  Full </a><br>- <a href="/twitter/news/170128.shtml" target=_blank> @DisK0nn3cT Not really, mostly permission issues/info leak...they've had a couple of XSS vulns but nothing direct.</a><br>- <a href="/twitter/news/5934.shtml" target=_blank> Swatting phreaker swatted and heading to jail: A 19-year-old American has been sentenced to eleven years in pris.. </a><br>- <a href="/twitter/news/221190.shtml" target=_blank> RT @fjserna You are not a true hacker if the calc.exe payload is not the scientific one... infosuck.org/0x0035.png</a><br></span></div><div align=right><br><a href="/gentop/tindex-list0.shtml"><span class=col>Voir Le top bi-hebdo de la revue Twitter en entier</span></a></div></td> </tr> <tr><td colspan=2> <table width=300><tr> <td bgcolor="#003366"></td><td height="1" bgcolor="#003366"></td></table> </tr> </table>
+<br><table border="0" width=300 cellpadding="1" cellspacing="1"> <tr> <td valign=bottom><span class=col><b>Top des articles les plus comment&eacute;s</b></span></td> <td height=20></td> </tr> <tr> <td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td> </tr> <tr> <td colspan="2" bgcolor="#F2F2F2"><span class=col>- <a href="/news/comments28122007-metasploit.shtml#comment">[Metasploit 2.x – Partie 1] Introduction et présentation</a><br>- <a href="/news/comments23032009-exploitable_windbg_dump_audit_msec.shtml#comment">Microsoft !Exploitable un nouvel outil gratuit  pour aider les développeurs à évaluer automatiquement les risques</a><br>- <a href="/news/comments24042009-webshag.shtml#comment">Webshag, un outil d'audit de serveur web</a><br>- <a href="/news/comments14112008-browser_rootkit.shtml#comment">Les navigateurs internet, des mini-systèmes d’exploitation hors de contrôle ?</a><br>- <a href="/news/comments01012009-iphone_3g_yellowsn0w_deblocage_sim.shtml#comment">Yellowsn0w un utilitaire de déblocage SIM pour le firmware 2.2 des Iphone 3G</a><br>- <a href="/news/comments02032009-caine_forensic_livecd_wintaylor.shtml#comment">CAINE un Live[CD|USB] pour faciliter la recherche légale de preuves numériques de compromission</a><br>- <a href="/news/comments09042009-nessus_4_syn_wmi_xslt_tcp_nasl_pci.shtml#comment">Nessus 4.0 placé sous le signe de la performance, de l'unification et de la personnalisation</a><br>- <a href="/news/comments14112007-kernel_hardening.shtml#comment">[Renforcement des fonctions de sécurité du noyau Linux – Partie 1] Présentation</a><br>- <a href="/news/comments11052008-snort_ids.shtml#comment">[IDS Snort Windows – Partie 1] Introduction aux IDS et à SNORT </a><br>- <a href="/news/comments20062009-origami_pdf_virus_filtre_javascript.shtml#comment">Origami pour forger, analyser et manipuler des fichiers PDF malicieux</a><br></span></div><div align=right><br><a href="/comtop/index-list0.shtml"><span class=col>Voir le top des plus comment&eacute;s en entier</span></a></div></td> </tr> <tr><td colspan=2> <table width=300><tr> <td bgcolor="#003366"></td><td height="1" bgcolor="#003366"></td></table> </tr> </table>
+
+ 
+ </table>  
+<br></span>
+</tr>
+
+<tr>
+<td align="center" bgcolor="#ffffff" valign="top" width="530">
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="530">
+<tr valign="top">
+<td bgcolor="#ffffff" align=center>
+<tr valign="top">
+<td bgcolor="#ffffff">
+<div align=center><table align=center bgcolor="#003852" border="0" cellpadding="0" cellspacing="0" width="540">
+<tr>
+<td>
+<div align=center><b><span class=white><font color=white>
+
+
+</font></span></b></table>
+<table bgcolor="#4a86a0" border="0" cellpadding="5" cellspacing="1" width="540">
+<tr>
+<td bgcolor="#ffffff" height="40" valign="top">
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="530">
+<tr>
+<td colspan="2" align="center" valign="middle">
+<div align="left">
+<hr size=1 color=black><span class=central>
+<div id="adwitserver">
+
+ <table width=400 align=center><tr><td align=right><a href="./index1.html">Articles suivants</a></td></table><br>
+<tr><td valign="top"><span class=central><b><i>Reportages</i></b><br><b><A HREF="/news/08012016-dip.shtml">DIP, solution de partage d'informations automatisée </a></b><BR> Lors de la conférence Botconf 2015, Frank Denis de chez OVH a présenté un protocole de partage d'informations concernant les évènements de sécurité.  - [08/01/2016]<BR>
+- <A HREF="./news/08012016-dip.shtml"><b>Voir la suite</b></A>  - <a href=/sommaires/commentsReportages.shtml#comments>Voir les commentaires de la cat&eacute;gorie Reportages</a> - <a href=/rss/cxml10Reportages.xml target=_blank>Suivre tous les commentaires de la categorie Reportages en RSS</a></span><br><br></td></tr>
+
+<tr><td valign="top"><span class=central><b><i>Breves</i></b><br><b><A HREF="/news/30102015_sqreen.shtml">Sqreen, protection applicative intelligente de nouvelle génération </a></b><BR> La solution Sqreen est destinée à protéger de manière rapide et transparente de nombreux types d'applications internet grâce à des technologies d'instrumentation et d'intelligence artificielle permettant de détecter et réparer les bugs. - [30/10/2015]<BR>
+- <A HREF="./news/30102015_sqreen.shtml"><b>Voir la suite</b></A>  - <a href=/sommaires/commentsBreves.shtml#comments>Voir les commentaires de la cat&eacute;gorie Breves</a> - <a href=/rss/cxml10Breves.xml target=_blank>Suivre tous les commentaires de la categorie Breves en RSS</a></span><br><br></td></tr>
+
+<tr><td valign="top"><span class=central><b><i>Interviews</i></b><br><b><A HREF="/news/02062014-deny-all-beeware.shtml">Renaud Bidou (Deny All): "L'innovation dans le domaine des WAFs s'oriente vers plus de bon sens et d'intelligence, plus de flexibilité et plus d'ergonomie"</a></b><BR> Alors que le secteur de la sécurité informatique en France est dans une phase de concentration, notamment avec la politique d'achat mené par certains grands acteurs, des structures plus petites se regroupent. C'est le cas avec le rachat de Beeware par Deny All, dans l'optique de mutualiser les ressources des deux sociétés, notamment en R&D. - [02/06/2014]<BR>
+- <A HREF="./news/02062014-deny-all-beeware.shtml"><b>Voir la suite</b></A>  - <a href=/sommaires/commentsInterviews.shtml#comments>Voir les commentaires de la cat&eacute;gorie Interviews</a> - <a href=/rss/cxml10Interviews.xml target=_blank>Suivre tous les commentaires de la categorie Interviews en RSS</a></span><br><br></td></tr>
+
+<tr><td valign="top"><span class=central><b><i>Reportages</i></b><br><b><A HREF="/news/28042014-vigik-rsa.shtml">Mises à jour en perspective pour le système Vigik</a></b><BR> Une faille présente dans plusieurs systèmes d'authentification et de contrôle d'accès basés sur RSA a été détaillée lors de l'édition 2014 de la conférence Hackito Ergo Sum. Elle, laisse entrevoir une prochaine mise à jour de l'ensemble du parc Vigik, soit un million d'immeubles devant être patchés. - [28/04/2014]<BR>
+- <A HREF="./news/28042014-vigik-rsa.shtml"><b>Voir la suite</b></A>  - <a href=/sommaires/commentsReportages.shtml#comments>Voir les commentaires de la cat&eacute;gorie Reportages</a> - <a href=/rss/cxml10Reportages.xml target=_blank>Suivre tous les commentaires de la categorie Reportages en RSS</a></span><br><br></td></tr>
+
+<tr><td valign="top"><span class=central><b><i>Failles</i></b><br><b><A HREF="/news/24042014-aegis.shtml">Les russes ont-ils pwn le système AEGIS ?</a></b><BR> Les médias russes ainsi que plusieurs blogs et sites d'informations font part de la neutralisation du système de combat AEGIS du Donald Cook en mer noire par un bombardier russe équipé d'un nouveau système de guerre électronique. Le départ de ce bâtiment du théatre d'opérations avant la date limite pourrait  accréditer cette thèse. - [24/04/2014]<BR>
+- <A HREF="./news/24042014-aegis.shtml"><b>Voir la suite</b></A>  - <a href=/sommaires/commentsFailles.shtml#comments>Voir les commentaires de la cat&eacute;gorie Failles</a> - <a href=/rss/cxml10Failles.xml target=_blank>Suivre tous les commentaires de la categorie Failles en RSS</a></span><br><br></td></tr>
+
+<tr><td valign="top"><span class=central><b><i>Tendances</i></b><br><b><A HREF="/news/10032014-ministere-interieur-censure.shtml">Le ministère de l'intérieur censure une conférence au Canada</a></b><BR> Le ministère de l'intérieur a apparemment censuré la présentation qui devait être effectuée par un chercheur français lors de la conférence Cansecwest, en la classifiant "secret défense" quasiment à la dernière minute, à la demande du DoD américain. - [10/03/2014]<BR>
+- <A HREF="./news/10032014-ministere-interieur-censure.shtml"><b>Voir la suite</b></A>  - <a href=/sommaires/commentsTendances.shtml#comments>Voir les commentaires de la cat&eacute;gorie Tendances</a> - <a href=/rss/cxml10Tendances.xml target=_blank>Suivre tous les commentaires de la categorie Tendances en RSS</a></span><br><br></td></tr>
+
+<tr><td valign="top"><span class=central><b><i>Breves</i></b><br><b><A HREF="/news/24022014-programme-cansecwest-2014.shtml">Saut d'air gap, audit de firmware et (in)sécurité mobile au programme de Cansecwest 2014</a></b><BR> Les nouveaux territoires explorés par les technologies, outils et menaces concernant la cybersécurité seront largement traités lors de l'édition 2014 de la célèbre conférence Cansecwest, qui aura lieu à Vancouver du 12 au 14 mars. - [24/02/2014]<BR>
+- <A HREF="./news/24022014-programme-cansecwest-2014.shtml"><b>Voir la suite</b></A>  - <a href=/sommaires/commentsBreves.shtml#comments>Voir les commentaires de la cat&eacute;gorie Breves</a> - <a href=/rss/cxml10Breves.xml target=_blank>Suivre tous les commentaires de la categorie Breves en RSS</a></span><br><br></td></tr>
+
+<tr><td valign="top"><span class=central><b><i>Tendances</i></b><br><b><A HREF="/news/18022014-jtrig-gchq-anonymous.shtml">GCHQ: Le JTRIG torpille Anonymous qui torpille le JTRIG (ou pas)</a></b><BR> Les dernières révélations d'Edward Snowden mettent en lumière l'utilisation d'attaques DDoS et d'infiltrations par le GCHQ contre des dissidents politiques se réclamant de la mouvance anonymous, en application de mesures de défense "proactives". Cela pourrait avoir des conséquences imprévues. - [18/02/2014]<BR>
+- <A HREF="./news/18022014-jtrig-gchq-anonymous.shtml"><b>Voir la suite</b></A>  - <a href=/sommaires/commentsTendances.shtml#comments>Voir les commentaires de la cat&eacute;gorie Tendances</a> - <a href=/rss/cxml10Tendances.xml target=_blank>Suivre tous les commentaires de la categorie Tendances en RSS</a></span><br><br></td></tr>
+
+<tr><td valign="top"><span class=central><b><i>Reportages</i></b><br><b><A HREF="/news/0422014-FIC2014-entree-en-territoire-inconnu.shtml">#FIC2014: Entrée en territoire inconnu</a></b><BR> L'édition 2014 du forum international de la cybersécurité consacre la rupture du "consensus mou" qui prévalait jusqu'ici. Ainsi nous entrons dans une phase de transition, qui pourrait déboucher (ou pas) sur un nouveau statu quo et une [cyber]paix globale. Une chronique "behind the scene". - [04/02/2014]<BR>
+- <A HREF="./news/0422014-FIC2014-entree-en-territoire-inconnu.shtml"><b>Voir la suite</b></A>  - <a href=/sommaires/commentsReportages.shtml#comments>Voir les commentaires de la cat&eacute;gorie Reportages</a> - <a href=/rss/cxml10Reportages.xml target=_blank>Suivre tous les commentaires de la categorie Reportages en RSS</a></span><br><br></td></tr>
+
+<tr><td valign="top"><span class=central><b><i>Tendances</i></b><br><b><A HREF="/news/29012014-senat-monnaies-virtuelles.shtml">Le Sénat investit dans les monnaies virtuelles</a></b><BR> Si la vénérable institution ne comprend pas encore complètement ce phénomène nouveau, les sénateurs, démontrant leur sagesse, sentent bien qu'il y a la un potentiel à explorer. - [29/01/2014]<BR>
+- <A HREF="./news/29012014-senat-monnaies-virtuelles.shtml"><b>Voir la suite</b></A>  - <a href=/sommaires/commentsTendances.shtml#comments>Voir les commentaires de la cat&eacute;gorie Tendances</a> - <a href=/rss/cxml10Tendances.xml target=_blank>Suivre tous les commentaires de la categorie Tendances en RSS</a></span><br><br></td></tr>
+ 
+<td valign="top"><table width=400 align=center><tr><td align=right><a href="./index1.html">Articles suivants</a></td></table>
+</div><br><br><div align=center><script type="text/javascript"><!--
+google_ad_client = "pub-7670419794937883";
+google_ad_slot = "5827645637";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><br><br></div>
+<br>
+<table width="530" border="0" cellpadding="1" cellspacing="1"><tr> <td valign=bottom><span class=col><b>SecuToolBox :</span></td> <td height=20><div align="right"></div></td></tr> <tr><td bgcolor="#003366"></td> <td height="1" bgcolor="#003366"></td></tr><tr><td colspan="2" bgcolor="#FFFFFF"><span class=col><div align="left"><span class=col><b></b></span><span class=col><a href="http://www.secuobs.com/news/05022006-bluetooth10.shtml">Bluetooth Stack Smasher v0.6</a> / <a href="http://www.secuobs.com/news/15022006-bss_0_8.shtml">Bluetooth Stack Smasher v0.8</a> / <a href="http://www.secuobs.com/news/26042006-bluetooth_eurosec.shtml">Slides Bluetooth Eurosec 2006</a> / <a href="http://www.secuobs.com/download/data/kkortchinsky/video/src/kkortchinsky.mp4.tar.gz">Expos&eacute; vid&eacute;o Windows Shellcode - Kostya Kortchinsky</a> / <a href="http://www.secuobs.com/download/data/nbrulez/audio/src/nbrulez.mp3.tar.gz">Expos&eacute; audio Reverse Engineering - Nicolas Brulez</a> / <a href="http://www.secuobs.com/download/data/pbetouin/video/src/pbetouin.mp4.tar.gz">Expos&eacute; vid&eacute;o Securitech - Pierre Betouin</a> / <a href="http://www.secuobs.com/news/08032008-freeradius.shtml">Secure WIFI WPA + EAP-TLS + Freeradius</a> / <a href="http://www.secuobs.com/news/25082006-audit_windows.shtml">Audit Windows</a> / <a href="http://www.secuobs.com/news/31122005-captive.shtml">Captive Password Windows</a> / <a href="http://www.secuobs.com/news/07062006-sstic_usbdumper.shtml">USBDumper</a> / <a href="http://www.secuobs.com/news/11122006-usbdumper2.shtml">USBDumper 2</a> / <a href="http://www.secuobs.com/news/23092006-hacking_hardware.shtml">Hacking Hardware</a> / <a href="http://www.secuobs.com/news/16092006-wishmaster.shtml">WishMaster backdoor</a> / <a href="http://www.secuobs.com/news/19122007-dnsa.shtml">DNS Auditing Tool</a> / <a href="http://www.secuobs.com/news/04102006-ettercap.shtml">Ettercap SSL MITM</a> / <a href="http://www.secuobs.com/news/01092007-winvuln_lexfo.shtml">Exploit vuln&eacute;rabilit&eacute;s Windows</a> / <a href="http://www.secuobs.com/news/14112007-kernel_hardening2.shtml">Memory Dumper Kernel Hardening</a> / <a href="http://www.secuobs.com/news/15092007-hacker_challenge.shtml">Reverse Engineering</a> / <a href="http://www.secuobs.com/news/01102007-scapy.shtml">Scapy</a> / <a href="http://www.secuobs.com/news/12062007-secubulive.shtml">SecUbuLIVE CD</a> / <a href="http://www.secuobs.com/news/28122007-metasploit.shtml">Metasploit</a> / <a href="http://www.secuobs.com/news/06092006-blink.shtml">eEye Blink Sec Center</a> / <a href="http://www.secuobs.com/news/15032008-retina.shtml">eEye Retina Scanner</a></span><br></div></span></div><div align=right><br><a href=/sommaires/Outils.html><u><span class=col>+ d'outils</span></u></a> / <a href=/sommaires/Tutoriels.html><u><span class=col>+ de tutoriels</span></u></a></div></td></tr></table> 
+
+<br><table width="530" border="0" cellpadding="1" cellspacing="1">      <tr>        <td  valign=bottom ><span class=col><b>Mini-Tagwall des articles publi&eacute;s sur SecuObs :</b></span></td>        <td  height=20><div align="right"><b><a href="/articles/xml/xml10.xml" target="_blank"><img src="/images/xml.gif" border="0"></a>          </b></div></td>      </tr> <tr>      <td bgcolor="#003366"></td>        <td height="1" bgcolor="#003366"></td>      </tr>      <tr><td colspan="2" bgcolor="#FFFFFF"><div align="left"><span class=col> <a href="/articles/aaascurit0.shtml">sécurité</a>, <a href="/articles/aaaexploit0.shtml">exploit</a>, <a href="/articles/aaawindows0.shtml">windows</a>, <a href="/articles/aaaattaque0.shtml">attaque</a>, <a href="/articles/aaaoutil0.shtml">outil</a>, <a href="/articles/aaamicrosoft0.shtml">microsoft</a>, <a href="/articles/aaarseau0.shtml">réseau</a>, <a href="/articles/aaaaudit0.shtml">audit</a>, <a href="/articles/aaametasploit0.shtml">metasploit</a>, <a href="/articles/aaavulnrabilit0.shtml">vulnérabilité</a>, <a href="/articles/aaasystme0.shtml">système</a>, <a href="/articles/aaavirus0.shtml">virus</a>, <a href="/articles/aaainternet0.shtml">internet</a>, <a href="/articles/aaausbsploit0.shtml">usbsploit</a>, <a href="/articles/aaadonnes0.shtml">données</a>, <a href="/articles/aaasource0.shtml">source</a>, <a href="/articles/aaalinux0.shtml">linux</a>, <a href="/articles/aaaprotocol0.shtml">protocol</a>, <a href="/articles/aaaprsentation0.shtml">présentation</a>, <a href="/articles/aaascanne0.shtml">scanne</a>, <a href="/articles/aaarseaux0.shtml">réseaux</a>, <a href="/articles/aaascanner0.shtml">scanner</a>, <a href="/articles/aaabluetooth0.shtml">bluetooth</a>, <a href="/articles/aaaconfrence0.shtml">conférence</a>, <a href="/articles/aaareverse0.shtml">reverse</a>, <a href="/articles/aaashell0.shtml">shell</a>, <a href="/articles/aaameterpreter0.shtml">meterpreter</a>, <a href="/articles/aaavista0.shtml">vista</a>, <a href="/articles/aaarootkit0.shtml">rootkit</a>, <a href="/articles/aaadtection0.shtml">détection</a>, <a href="/articles/aaamobile0.shtml">mobile</a>, <a href="/articles/aaasecurity0.shtml">security</a>, <a href="/articles/aaamalicieux0.shtml">malicieux</a>, <a href="/articles/aaaengineering0.shtml">engineering</a>, <a href="/articles/aaatlphone0.shtml">téléphone</a>, <a href="/articles/aaapaquet0.shtml">paquet</a>, <a href="/articles/aaatrames0.shtml">trames</a>, <a href="/articles/aaahttps0.shtml">https</a>, <a href="/articles/aaanoyau0.shtml">noyau</a>, <a href="/articles/aaautilisant0.shtml">utilisant</a>, <a href="/articles/aaaintel0.shtml">intel</a>, <a href="/articles/aaawishmaster0.shtml">wishmaster</a>, <a href="/articles/aaagoogle0.shtml">google</a>, <a href="/articles/aaasysun0.shtml">sysun</a>, <a href="/articles/aaalibre0.shtml">libre</a></span></div><div align=right><br><a href="/articles/flnews0.shtml"><u><span class=col>+ de mots cl&eacute;s avec l'annuaire des articles publi&eacute;s sur SecuObs</span></u></a></div></td>      </tr>    </table>
+<br><table width="530" border="0" cellpadding="1" cellspacing="1">      <tr>        <td  valign=bottom><span class=col><b>Mini-Tagwall de l'annuaire video  :</b></span></td>        <td  height=20><div align="right"><b><a href="/videos/xml/xml10.xml" target="_blank"><img src="/images/xml.gif" border="0"></a>          </b></div></td>      </tr> <tr>      <td bgcolor="#003366"></td>        <td height="1" bgcolor="#003366"></td>      </tr>      <tr><td colspan="2" bgcolor="#FFFFFF"><div align="left"><span class=col> <a href="/videos/aaacurit0.shtml">curit</a>, <a href="/videos/aaasecurity0.shtml">security</a>, <a href="/videos/aaabiomet0.shtml">biomet</a>, <a href="/videos/aaametasploit0.shtml">metasploit</a>, <a href="/videos/aaabiometric0.shtml">biometric</a>, <a href="/videos/aaacking0.shtml">cking</a>, <a href="/videos/aaapassword0.shtml">password</a>, <a href="/videos/aaawindows0.shtml">windows</a>, <a href="/videos/aaabotnet0.shtml">botnet</a>, <a href="/videos/aaadefcon0.shtml">defcon</a>, <a href="/videos/aaatutorial0.shtml">tutorial</a>, <a href="/videos/aaacrypt0.shtml">crypt</a>, <a href="/videos/aaaxploit0.shtml">xploit</a>, <a href="/videos/aaaexploit0.shtml">exploit</a>, <a href="/videos/aaalockpicking0.shtml">lockpicking</a>, <a href="/videos/aaalinux0.shtml">linux</a>, <a href="/videos/aaaattack0.shtml">attack</a>, <a href="/videos/aaawireshark0.shtml">wireshark</a>, <a href="/videos/aaavmware0.shtml">vmware</a>, <a href="/videos/aaarootkit0.shtml">rootkit</a>, <a href="/videos/aaaconference0.shtml">conference</a>, <a href="/videos/aaanetwork0.shtml">network</a>, <a href="/videos/aaashmoocon0.shtml">shmoocon</a>, <a href="/videos/aaabacktrack0.shtml">backtrack</a>, <a href="/videos/aaavirus0.shtml">virus</a>, <a href="/videos/aaaconficker0.shtml">conficker</a>, <a href="/videos/aaaelcom0.shtml">elcom</a>, <a href="/videos/aaaetter0.shtml">etter</a>, <a href="/videos/aaaelcomsoft0.shtml">elcomsoft</a>, <a href="/videos/aaaserver0.shtml">server</a>, <a href="/videos/aaameterpreter0.shtml">meterpreter</a>, <a href="/videos/aaaopenvpn0.shtml">openvpn</a>, <a href="/videos/aaaettercap0.shtml">ettercap</a>, <a href="/videos/aaaopenbs0.shtml">openbs</a>, <a href="/videos/aaaiphone0.shtml">iphone</a>, <a href="/videos/aaashell0.shtml">shell</a>, <a href="/videos/aaaopenbsd0.shtml">openbsd</a>, <a href="/videos/aaaiptables0.shtml">iptables</a>, <a href="/videos/aaasecuritytube0.shtml">securitytube</a>, <a href="/videos/aaadeepsec0.shtml">deepsec</a>, <a href="/videos/aaasource0.shtml">source</a>, <a href="/videos/aaaoffice0.shtml">office</a>, <a href="/videos/aaasystm0.shtml">systm</a>, <a href="/videos/aaaopenssh0.shtml">openssh</a>, <a href="/videos/aaaradio0.shtml">radio</a></span></div><div align=right><br><a href="/videos/flnews0.shtml"><u><span class=col>+ de mots cl&eacute;s avec l'annuaire des videos</span></u></a></div></td>      </tr>    </table>
+<br><table width="530" border="0" cellpadding="1" cellspacing="1">      <tr>        <td  valign=bottom><span class=col><b>Mini-Tagwall des articles de la revue de presse :</b></span></td>        <td  height=20><div align="right"><b><a href="/revue/xml/xml10.xml" target="_blank"><img src="/images/xml.gif" border="0"></a>          </b></div></td>      </tr> <tr>      <td bgcolor="#003366"></td>        <td height="1" bgcolor="#003366"></td>      </tr>      <tr><td colspan="2" bgcolor="#FFFFFF"><div align="left"><span class=col><a href="/revue/aaasecurity0.shtml">security</a>, <a href="/revue/aaamicrosoft0.shtml">microsoft</a>, <a href="/revue/aaawindows0.shtml">windows</a>, <a href="/revue/aaahacker0.shtml">hacker</a>, <a href="/revue/aaaattack0.shtml">attack</a>, <a href="/revue/aaanetwork0.shtml">network</a>, <a href="/revue/aaavulnerability0.shtml">vulnerability</a>, <a href="/revue/aaagoogle0.shtml">google</a>, <a href="/revue/aaaexploit0.shtml">exploit</a>, <a href="/revue/aaamalware0.shtml">malware</a>, <a href="/revue/aaainternet0.shtml">internet</a>, <a href="/revue/aaaremote0.shtml">remote</a>, <a href="/revue/aaaiphone0.shtml">iphone</a>, <a href="/revue/aaaserver0.shtml">server</a>, <a href="/revue/aaainject0.shtml">inject</a>, <a href="/revue/aaapatch0.shtml">patch</a>, <a href="/revue/aaaapple0.shtml">apple</a>, <a href="/revue/aaatwitter0.shtml">twitter</a>, <a href="/revue/aaamobile0.shtml">mobile</a>, <a href="/revue/aaavirus0.shtml">virus</a>, <a href="/revue/aaaebook0.shtml">ebook</a>, <a href="/revue/aaafacebook0.shtml">facebook</a>, <a href="/revue/aaavulnrabilit0.shtml">vulnérabilité</a>, <a href="/revue/aaacrypt0.shtml">crypt</a>, <a href="/revue/aaasource0.shtml">source</a>, <a href="/revue/aaalinux0.shtml">linux</a>, <a href="/revue/aaapassword0.shtml">password</a>, <a href="/revue/aaaintel0.shtml">intel</a>, <a href="/revue/aaaresearch0.shtml">research</a>, <a href="/revue/aaavirtual0.shtml">virtual</a>, <a href="/revue/aaaphish0.shtml">phish</a>, <a href="/revue/aaaaccess0.shtml">access</a>, <a href="/revue/aaatutorial0.shtml">tutorial</a>, <a href="/revue/aaatrojan0.shtml">trojan</a>, <a href="/revue/aaasocial0.shtml">social</a>, <a href="/revue/aaaprivacy0.shtml">privacy</a>, <a href="/revue/aaafirefox0.shtml">firefox</a>, <a href="/revue/aaaadobe0.shtml">adobe</a>, <a href="/revue/aaaoverflow0.shtml">overflow</a>, <a href="/revue/aaaoffice0.shtml">office</a>, <a href="/revue/aaacisco0.shtml">cisco</a>, <a href="/revue/aaaconficker0.shtml">conficker</a>, <a href="/revue/aaabotnet0.shtml">botnet</a>, <a href="/revue/aaapirate0.shtml">pirate</a>, <a href="/revue/aaascurit0.shtml">sécurité</a></span></div><div align=right><br><a href="/revue/flnews0.shtml"><u><span class=col>+ de mots cl&eacute;s avec l'annuaire de la revue de presse</span></u></a></div></td>      </tr>    </table>
+<br><table width="530" border="0" cellpadding="1" cellspacing="1">      <tr>        <td  valign=bottom><span class=col><b>Mini-Tagwall des Tweets de la revue Twitter :</b></span></td>        <td  height=20><div align="right"><b><a href="/twitter/xml/xml10.xml" target="_blank"><img src="/images/xml.gif" border="0"></a>          </b></div></td>      </tr> <tr>      <td bgcolor="#003366"></td>        <td height="1" bgcolor="#003366"></td>      </tr>      <tr><td colspan="2" bgcolor="#FFFFFF"><div align="left"><span class=col><a href="/twitter/aaasecurity0.shtml">security</a>, <a href="/twitter/aaalinux0.shtml">linux</a>, <a href="/twitter/aaabotnet0.shtml">botnet</a>, <a href="/twitter/aaaattack0.shtml">attack</a>, <a href="/twitter/aaametasploit0.shtml">metasploit</a>, <a href="/twitter/aaacisco0.shtml">cisco</a>, <a href="/twitter/aaadefcon0.shtml">defcon</a>, <a href="/twitter/aaaphish0.shtml">phish</a>, <a href="/twitter/aaaexploit0.shtml">exploit</a>, <a href="/twitter/aaagoogle0.shtml">google</a>, <a href="/twitter/aaainject0.shtml">inject</a>, <a href="/twitter/aaaserver0.shtml">server</a>, <a href="/twitter/aaafirewall0.shtml">firewall</a>, <a href="/twitter/aaanetwork0.shtml">network</a>, <a href="/twitter/aaatwitter0.shtml">twitter</a>, <a href="/twitter/aaavmware0.shtml">vmware</a>, <a href="/twitter/aaawindows0.shtml">windows</a>, <a href="/twitter/aaamicrosoft0.shtml">microsoft</a>, <a href="/twitter/aaacompliance0.shtml">compliance</a>, <a href="/twitter/aaavulnerability0.shtml">vulnerability</a>, <a href="/twitter/aaapython0.shtml">python</a>, <a href="/twitter/aaaengineering0.shtml">engineering</a>, <a href="/twitter/aaasource0.shtml">source</a>, <a href="/twitter/aaakernel0.shtml">kernel</a>, <a href="/twitter/aaacrypt0.shtml">crypt</a>, <a href="/twitter/aaasocial0.shtml">social</a>, <a href="/twitter/aaaoverflow0.shtml">overflow</a>, <a href="/twitter/aaanessus0.shtml">nessus</a>, <a href="/twitter/aaacrack0.shtml">crack</a>, <a href="/twitter/aaahacker0.shtml">hacker</a>, <a href="/twitter/aaavirus0.shtml">virus</a>, <a href="/twitter/aaaiphone0.shtml">iphone</a>, <a href="/twitter/aaapatch0.shtml">patch</a>, <a href="/twitter/aaavirtual0.shtml">virtual</a>, <a href="/twitter/aaajavascript0.shtml">javascript</a>, <a href="/twitter/aaamalware0.shtml">malware</a>, <a href="/twitter/aaaconficker0.shtml">conficker</a>, <a href="/twitter/aaapentest0.shtml">pentest</a>, <a href="/twitter/aaaresearch0.shtml">research</a>, <a href="/twitter/aaaemail0.shtml">email</a>, <a href="/twitter/aaapassword0.shtml">password</a>, <a href="/twitter/aaaadobe0.shtml">adobe</a>, <a href="/twitter/aaaapache0.shtml">apache</a>, <a href="/twitter/aaaproxy0.shtml">proxy</a>, <a href="/twitter/aaabacktrack0.shtml">backtrack</a></span></div><div align=right><br><a href="/twitter/flnews0.shtml"><u><span class=col>+ de mots cl&eacute;s avec l'annuaire de la revue Twitter</span></u></a></div></td>      </tr>    </table>
+</div></span>
+</td>
+</tr>
+</table>
+</p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table><div align=center>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<img src="/cgi-bin/lang.chtml?url=/index.html" alt="">
+</div>
+
+
+<td valign=top>
+
+</table>
+</center>
+</body>
+</html>
+
